@@ -1,1086 +1,1303 @@
-% ---------------------------------------------------------------
-% GATE EC 2025 -- single-file version (preamble, macros, figures, questions)
-% (article class + Times, because IEEEtran.cls is not available in
-%  the build environment; problems.tex itself is class-independent)
-% ---------------------------------------------------------------
-\documentclass[12pt,a4paper]{article}
-\usepackage[margin=2.2cm]{geometry}
-\usepackage{mathptmx}                 % Times text + math
-\usepackage{amsmath,amssymb,mathtools}
-\usepackage{enumitem}
-\usepackage{multicol}
-\usepackage{float}                    % [H] placement
-\usepackage{chngcntr}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{listings}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta,calc,positioning,fit,patterns,shapes.geometric,circuits.logic.US}
-\usepackage[american]{circuitikz}
-\usepackage[colorlinks=true,allcolors=red,hypertexnames=false]{hyperref}
+\begin{itemlist}
 
-% ---------------------------------------------------------------
-% macros.tex : every custom macro used by problems.tex
-% (If your own book preamble already defines these, you do NOT
-%  need this file -- use it only for the stand-alone preview.)
-% ---------------------------------------------------------------
-\providecommand{\pr}[1]{\Pr\left(#1\right)}
-\providecommand{\brak}[1]{\left(#1\right)}
-\providecommand{\sbrak}[1]{\left[#1\right]}
-\providecommand{\cbrak}[1]{\left\{#1\right\}}
-\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
-\providecommand{\rabs}[1]{\left.#1\right\rvert}
-\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-\providecommand{\myvec}[1]{\begin{bmatrix}#1\end{bmatrix}}
-\providecommand{\mydet}[1]{\left\lvert#1\right\rvert}
-\providecommand{\rank}{\operatorname{rank}}
-\providecommand{\perm}[2]{{}^{#1}P_{#2}}
-\providecommand{\rect}{\operatorname{rect}}
-\providecommand{\system}[1]{\xleftrightarrow{\mathcal{#1}}}
-\providecommand{\solution}{\noindent\textbf{Solution: }}
-\providecommand{\figref}[1]{Fig.~\ref{#1}}
-\providecommand{\ang}[1]{\angle #1^{\circ}}
-\renewcommand{\j}{\mathrm{j}}
-\renewcommand{\vec}[1]{\mathbf{#1}}
-
-
-% option labels  i)  ii)  iii)  iv)   (second-level enumerate)
-\renewcommand{\labelenumii}{\roman{enumii})}
-\setlist[enumerate,2]{itemsep=2pt,topsep=3pt}
-
-% equation / figure numbers :  section.subsection.item.k   e.g. 1.2.14.1
-% (enumitem's  ref=\thesubsection.\theenumi  already makes \theenumi = 1.2.14)
-\counterwithin*{equation}{enumi}
-\counterwithin*{figure}{enumi}
-\renewcommand{\theequation}{\theenumi.\arabic{equation}}
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-\renewcommand{\figurename}{Fig.}
-
-\lstset{frame=single,basicstyle=\rmfamily,columns=fullflexible}
-\setlength{\parindent}{0pt}
-
-\title{GATE EC 2025}
-\author{}
-\date{}
-
-\begin{document}
-\maketitle
-\tableofcontents
-\newpage
-
-\section{GATE EC 2025}
-\subsection{Formulae}
-% ---------------------------------------------------------------
-% formulae.tex  --  (empty for now; add formulae LATER)
-% Use exactly the same pattern as problems.tex, e.g.
-%
-% \begin{enumerate}[label=\thesubsection.\arabic*, ref=\thesubsection.\theenumi]
-% \item The Laplace transform is defined as
-% \begin{align}
-% g\brak{t} \system{L} G(s) = \int_{0}^{\infty} e^{-st} g\brak{t}\, dt
-% \label{eq:EC25-Laplace-def}
-% \end{align}
-% \solution (optional derivation)
-% ...
-% \end{enumerate}
-% Then, in any solution, refer to it with \eqref{eq:EC25-Laplace-def}.
-% ---------------------------------------------------------------
-\noindent\textit{Formulae will be added here.}
-
-
-\subsection{Problems}
-\begin{enumerate}[label=\thesubsection.\arabic*, ref=\thesubsection.\theenumi]
-%--------------------------------------------------------------- Q11
-\item
-Consider the matrix $\vec{A}$ below:
+\item\label{p:rank}
+Consider the matrix $\vec A$ below:
 \begin{align}
-\vec{A} = \myvec{
-2 & 3 & 4 & 5 \\
-0 & 6 & 7 & 8 \\
-0 & 0 & \alpha & \beta \\
-0 & 0 & 0 & \gamma
-}
+\vec A=\myvec{2&3&4&5\\0&6&7&8\\0&0&\alpha&\beta\\0&0&0&\gamma}
+\label{eq:P1-A}
 \end{align}
-For which of the following combinations of $\alpha$, $\beta$, and $\gamma$, is the rank of $\vec{A}$ at least three?
+For which of the following combinations of $\alpha$, $\beta$ and $\gamma$ is the rank of $\vec A$ at least three?
 \hfill (EC~2025)
-\begin{enumerate}[label=(\roman*), itemsep=0pt, topsep=2pt]
-    \item $\alpha = 0$ and $\beta = \gamma \neq 0$.
-    \item $\alpha = \beta = \gamma = 0$.
-    \item $\beta = \gamma = 0$ and $\alpha \neq 0$.
-    \item $\alpha = \beta = \gamma \neq 0$.
-\end{enumerate}
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item Only (i), (iii), and (iv)
-    \item Only (iv)
-    \item Only (ii)
-    \item Only (i) and (iii)
-	\end{multicols}
-\end{enumerate}
+\begin{conds}
+\item $\alpha=0$ and $\beta=\gamma\ne0$.
+\item $\alpha=\beta=\gamma=0$.
+\item $\beta=\gamma=0$ and $\alpha\ne0$.
+\item $\alpha=\beta=\gamma\ne0$.
+\end{conds}
+\begin{options}
+\item Only (i), (iii), and (iv)
+\item Only (iv)
+\item Only (ii)
+\item Only (i) and (iii)
+\end{options}
 
-%--------------------------------------------------------------- Q12
-\item
+\solution
+By \eqref{eq:F-rank-pivots} the rank is the number of non-zero rows in the row echelon form.
+
+Case (i), $\alpha=0$ and $\beta=\gamma\ne0$: rows 3 and 4 are equal, so $R_4\to R_4-R_3$ gives a zero row.
+\begin{align}
+\vec A&=\myvec{2&3&4&5\\0&6&7&8\\0&0&0&\beta\\0&0&0&\beta}\xrightarrow{R_4\to R_4-R_3}\myvec{2&3&4&5\\0&6&7&8\\0&0&0&\beta\\0&0&0&0}
+\\
+\rank\brak{\vec A}&=3
+\end{align}
+Case (ii), $\alpha=\beta=\gamma=0$: the last two rows are zero.
+\begin{align}
+\vec A&=\myvec{2&3&4&5\\0&6&7&8\\0&0&0&0\\0&0&0&0}
+\\
+\rank\brak{\vec A}&=2
+\end{align}
+Case (iii), $\beta=\gamma=0$ and $\alpha\ne0$: only the fourth row is zero.
+\begin{align}
+\vec A&=\myvec{2&3&4&5\\0&6&7&8\\0&0&\alpha&0\\0&0&0&0}
+\\
+\rank\brak{\vec A}&=3
+\end{align}
+Case (iv), $\alpha=\beta=\gamma\ne0$: the matrix is already in echelon form with no zero row.
+\begin{align}
+\vec A&=\myvec{2&3&4&5\\0&6&7&8\\0&0&\alpha&\alpha\\0&0&0&\alpha}
+\\
+\rank\brak{\vec A}&=4
+\end{align}
+
+
+\item\label{p:series}
 Consider the following series:
-\begin{enumerate}[label=(\roman*), itemsep=0pt, topsep=2pt]
-    \item $\displaystyle\sum_{n=1}^{\infty} \frac{1}{\sqrt{n}}$
-    \item $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n\brak{n+1}}$
-    \item $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n!}$
-\end{enumerate}
-Choose the correct option.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item Only (ii) converges
-    \item Only (ii) and (iii) converge
-    \item Only (iii) converges
-    \item All three converge
-	\end{multicols}
-\end{enumerate}
+\begin{align}
+\text{(i)}\ \sum_{n=1}^{\infty}\frac{1}{\sqrt n},\qquad
+\text{(ii)}\ \sum_{n=1}^{\infty}\frac{1}{n(n+1)},\qquad
+\text{(iii)}\ \sum_{n=1}^{\infty}\frac{1}{n!}
+\end{align}
+Choose the correct option. \hfill (EC~2025)
+\begin{options}
+\item Only (ii) converges
+\item Only (ii) and (iii) converge
+\item Only (iii) converges
+\item All three converge
+\end{options}
 
-%--------------------------------------------------------------- Q13
-\item
-A pot contains two red balls and two blue balls. Two balls are drawn from this pot randomly without replacement.
+\solution
+Series (i) is a $p$-series, series (ii) telescopes and series (iii) passes the ratio test:
+\begin{align}
+\sum_{n=1}^{\infty}\frac{1}{\sqrt n}&=\sum_{n=1}^{\infty}n^{-1/2},\qquad p=\frac12\le1\ \Rightarrow\ \text{diverges}\uses{eq:F-pseries}
+\\
+\sum_{n=1}^{N}\frac{1}{n(n+1)}&=1-\frac{1}{N+1}\ \to\ 1\uses{eq:F-telescope}
+\\
+\frac{a_{n+1}}{a_n}&=\frac{n!}{\brak{n+1}!}=\frac{1}{n+1}\ \to\ 0<1\uses{eq:F-ratio}
+\\
+\sum_{n=1}^{\infty}\frac{1}{n!}&=e-1\uses{eq:F-exp}
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Series_convergence.png}
+\caption{Partial sums of the three series}
+\label{fig:c-series}
+\end{figure}
 
-What is the probability that the two balls drawn have different colours?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $\dfrac{2}{3}$
-    \item $\dfrac{1}{3}$
-    \item $\dfrac{1}{2}$
-    \item $1$
-	\end{multicols}
-\end{enumerate}
 
-%--------------------------------------------------------------- Q14
-\item
+\item\label{p:balls}
+A pot contains two red balls and two blue balls. Two balls are drawn from this pot randomly without replacement. What is the probability that the two balls drawn have different colours? \hfill (EC~2025)
+\begin{options}
+\item $2/3$
+\item $1/3$
+\item $1/2$
+\item $1$
+\end{options}
+
+\solution
+Number the balls $1,2$ (red) and $3,4$ (blue). Choosing two balls at random is the same as selecting each ball independently with probability $\tfrac12$ and keeping the outcomes with exactly two balls selected. Let $B$ be the selection indicator of one ball, with $p_B[0]=p_B[1]=\tfrac12$. The number $X$ of selected red balls is the sum of two independent indicators, so by the convolution formula \eqref{eq:F-conv-pmf}:
+\begin{align}
+p_X[0]&=p_B[0]\,p_B[0]=\frac14
+\\
+p_X[1]&=p_B[0]\,p_B[1]+p_B[1]\,p_B[0]=\frac12
+\\
+p_X[2]&=p_B[1]\,p_B[1]=\frac14
+\end{align}
+The number $Y$ of selected blue balls has the same PMF, $p_Y=p_X$. The total number selected is $S=X+Y$, and \eqref{eq:F-conv-pmf} gives every case:
+\begin{align}
+p_S[0]&=p_X[0]\,p_Y[0]=\frac1{16}
+\\
+p_S[1]&=p_X[0]\,p_Y[1]+p_X[1]\,p_Y[0]=\frac14
+\\
+p_S[2]&=p_X[0]\,p_Y[2]+p_X[1]\,p_Y[1]+p_X[2]\,p_Y[0]=\frac38
+\\
+p_S[3]&=p_X[1]\,p_Y[2]+p_X[2]\,p_Y[1]=\frac14
+\\
+p_S[4]&=p_X[2]\,p_Y[2]=\frac1{16}
+\end{align}
+Exactly two balls are drawn when $S=2$. They have different colours when $X=1$ and $Y=1$, whose probability is, by independence \eqref{eq:F-indep},
+\begin{align}
+p_X[1]\,p_Y[1]&=\frac14
+\\
+\pr{\text{different colours}}&=\frac{p_X[1]\,p_Y[1]}{p_S[2]}=\frac{1/4}{3/8}=\frac23
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Two_balls.png}
+\caption{PMFs of $X$, $Y$ and $S=X+Y$ (convolution)}
+\label{fig:c-balls}
+\end{figure}
+
+
+\item\label{p:fm}
 Consider a frequency-modulated (FM) signal
 \begin{align}
-f\brak{t} = A_c \cos\brak{2\pi f_c t + 3\sin\brak{2\pi f_1 t} + 4\sin\brak{6\pi f_1 t}},
+f(t)=A_c\cos\brak{2\pi f_ct+3\sin\brak{2\pi f_1t}+4\sin\brak{6\pi f_1t}}
 \end{align}
-where $A_c$ and $f_c$ are, respectively, the amplitude and frequency (in Hz) of the carrier waveform. The frequency $f_1$ is in Hz, and assume that $f_c > 100 f_1$.
+where $A_c$ and $f_c$ are the amplitude and frequency (in Hz) of the carrier. The frequency $f_1$ is in Hz and $f_c>100f_1$. The peak frequency deviation of the FM signal in Hz is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{options}
+\item $15f_1$
+\item $12f_1$
+\item $4f_1$
+\item $2f_1$
+\end{options}
 
-The peak frequency deviation of the FM signal in Hz is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $15 f_1$
-    \item $12 f_1$
-    \item $4 f_1$
-    \item $2 f_1$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q17
-\item
-Consider the discrete-time system below with input $x[n]$ and output $y[n]$. In the figure, $h_1[n]$ and $h_2[n]$ denote the impulse responses of LTI Subsystems 1 and 2, respectively. Also, $\delta[n]$ is the unit impulse, and $b > 0$.
-
-Assuming $h_2[n] \neq \delta[n]$, the overall system (denoted by the dashed box) is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item linear and time invariant
-    \item linear and time variant
-    \item nonlinear and time invariant
-    \item nonlinear and time variant
-	\end{multicols}
-\end{enumerate}
-\begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, blk/.style={draw,thick,minimum width=1.3cm,minimum height=0.9cm}, sm/.style={draw,circle,inner sep=0pt,minimum size=0.7cm}]
-\node (x) at (0,0) {$x[n]$};
-\node[blk] (h1) at (2,0) {$h_1[n]$};
-\node[sm] (s1) at (4.2,0) {$+$};
-\node[blk] (h2) at (6.4,0) {$h_2[n]$};
-\node[sm] (s2) at (8.6,0) {$+$};
-\node (y) at (10.4,0) {$y[n]$};
-\draw[->] (x)--(h1); \draw[->] (h1)--(s1); \draw[->] (s1)--(h2);
-\draw[->] (h2)--(s2); \draw[->] (s2)--(y);
-\node (b1) at (4.2,-1.6) {$b\,\delta[n]$}; \draw[->] (b1)--(s1);
-\node (b2) at (8.6,-1.6) {$-b\,\delta[n]$}; \draw[->] (b2)--(s2);
-\node[font=\small] at (2.0,-0.95) {Subsystem 1};
-\node[font=\small] at (6.4,-0.95) {Subsystem 2};
-\draw[dashed,thick] (0.95,1.0) rectangle (9.5,-2.1);
-\end{tikzpicture}
-
-    \caption{Discrete-time system}
-    \label{fig:EC25-17}
-\end{center}
-\end{figure}
-
-%--------------------------------------------------------------- Q18
-\item
-Consider a continuous-time, real-valued signal $f\brak{t}$ whose Fourier transform
+\solution
+Differentiate the phase and divide by $2\pi$:
 \begin{align}
-F\brak{\omega} = \int_{-\infty}^{\infty} f\brak{t} \exp\brak{-\j \omega t}\, dt
+\phi(t)&=2\pi f_ct+3\sin\brak{2\pi f_1t}+4\sin\brak{6\pi f_1t}
+\\
+f_i(t)&=\frac{1}{2\pi}\frac{d\phi}{dt}=f_c+3f_1\cos\brak{2\pi f_1t}+12f_1\cos\brak{6\pi f_1t}\uses{eq:F-fm}
+\\
+\Delta f(t)&=3f_1\cos\brak{2\pi f_1t}+12f_1\cos\brak{6\pi f_1t}
 \end{align}
-exists.
-
-Which one of the following statements is always TRUE?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $\abs{F\brak{\omega}} \leq \displaystyle\int_{-\infty}^{\infty} \abs{f\brak{t}}\, dt$
-    \item $\abs{F\brak{\omega}} > \displaystyle\int_{-\infty}^{\infty} \abs{f\brak{t}}\, dt$
-    \item $\abs{F\brak{\omega}} \leq \displaystyle\int_{-\infty}^{\infty} f\brak{t}\, dt$
-    \item $\abs{F\brak{\omega}} \geq \displaystyle\int_{-\infty}^{\infty} f\brak{t}\, dt$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q20
-\item
-Let $i_C$, $i_L$, and $i_R$ be the currents flowing through the capacitor, inductor, and resistor, respectively, in the circuit given below. The AC admittances are given in Siemens (S).
-
-Which one of the following is TRUE?
-\hfill (EC~2025)
-\begin{enumerate}
-    \item $i_C = 0.25\ang{180}$ A, \; $i_L = 0.1\ang{0}$ A, \; $i_R = 0.2\ang{90}$ A
-    \item $i_C = 4\ang{180}$ A, \; $i_L = 10\ang{0}$ A, \; $i_R = 5\ang{90}$ A
-    \item $i_C = 0.25\ang{270}$ A, \; $i_L = 0.1\ang{90}$ A, \; $i_R = 0.2\ang{90}$ A
-    \item $i_C = 4\ang{90}$ A, \; $i_L = 10\ang{270}$ A, \; $i_R = 5\ang{0}$ A
-\end{enumerate}
-\begin{figure}[H]
-\begin{center}
-\begin{circuitikz}[american, scale=0.95, transform shape]
-\draw (0,0) to[sV, l=$1\angle 90^\circ$ V] (0,3) -- (8.5,3);
-\draw (0,0) -- (8.5,0);
-\draw (3.3,3) to[C, l=$j0.25$ S, i=$i_C$] (3.3,0);
-\draw (5.6,3) to[L, l=$-j0.1$ S, i=$i_L$] (5.6,0);
-\draw (8.5,3) to[R, l=$0.2$ S, i=$i_R$] (8.5,0);
-\fill (3.3,3) circle(2pt) (5.6,3) circle(2pt) (3.3,0) circle(2pt) (5.6,0) circle(2pt);
-\node at (0.45,2.35) {$+$}; \node at (0.45,0.65) {$-$};
-\end{circuitikz}
-
-    \caption{Parallel RLC circuit}
-    \label{fig:EC25-20}
-\end{center}
-\end{figure}
-
-%--------------------------------------------------------------- Q23
-\item
-A 3-input majority logic gate has inputs $X$, $Y$, and $Z$. The output $F$ of the gate is logic `1' if two or more of the inputs are logic `1'. The output $F$ is logic `0' if two or more of the inputs are logic `0'.
-
-Which one of the following options is a Boolean expression of the output $F$?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $XY + YZ + ZX$
-    \item $X \oplus Y \oplus Z$
-    \item $X + Y + Z$
-    \item $XYZ$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q24
-\item
-A full adder and an XOR gate are used to design a digital circuit with inputs $X$, $Y$, and $Z$, and output $F$, as shown below. The input $Z$ is connected to the carry-in input of the full adder.
-
-If the input $Z$ is set to logic `1', then the circuit functions as \underline{\hspace{1cm}} with $X$ and $Y$ as inputs.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item an adder
-    \item a subtractor
-    \item a multiplier
-    \item a binary to Gray code converter
-	\end{multicols}
-\end{enumerate}
-\begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth]
-% full adder (trapezium)
-\draw[thick] (-1.7,0) -- (1.7,0) -- (1.2,-1.3) -- (-1.2,-1.3) -- cycle;
-\node[align=center] at (0,-0.65) {full\\adder};
-% X input
-\node[above] at (-1.0,3.3) {$X$};
-\draw[->] (-1.0,3.3) -- (-1.0,0);
-% XOR gate pointing down
-\node[xor gate US, draw, thick, rotate=-90, logic gate inputs=nn, scale=1.3] (g) at (0.5,1.6) {};
-\draw[->] (g.output) -- (g.output |- 0,0);
-\node[above left,inner sep=1pt] at (g.input 2 |- 0,3.3) {$Y$};
-\node[above right,inner sep=1pt] at (g.input 1 |- 0,3.3) {$Z$};
-\draw (g.input 2 |- 0,3.3) -- (g.input 2);
-\draw (g.input 1 |- 0,3.3) -- (g.input 1);
-% Z also goes to the carry-in
-\fill (g.input 1 |- 0,2.85) circle(1.6pt);
-\draw (g.input 1 |- 0,2.85) -| (2.7,-0.6);
-\draw[->] (2.7,-0.6) -- (1.47,-0.6);
-% output F (2 bits)
-\draw[->] (0,-1.3) -- (0,-2.3) node[below] {$F$};
-\draw (-0.12,-1.65) -- (0.12,-1.45); \node[right,font=\small] at (0.08,-1.55) {2};
-\end{tikzpicture}
-
-    \caption{Full adder with XOR gate}
-    \label{fig:EC25-24}
-\end{center}
-\end{figure}
-
-%--------------------------------------------------------------- Q25
-\item
-Consider the function $f: \mathbb{R} \to \mathbb{R}$, defined as
+Both cosines equal $1$ at $t=0$, so the bound is reached:
 \begin{align}
-f\brak{x} = 2x^3 - 3x^2 - 12x + 1.
+\Delta f_{\mathrm{peak}}&=3f_1+12f_1=15f_1
 \end{align}
-Which of the following statements is/are correct?
-
-(Here, $\mathbb{R}$ is the set of real numbers.)
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $f$ has no global maximizer
-    \item $f$ has no global minimizer
-    \item $x = -1$ is a local minimizer of $f$
-    \item $x = 2$ is a local maximizer of $f$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q26
-\item
-Consider the unity-negative-feedback system shown in \figref{fig:EC25-26a} below, where gain $K \geq 0$. The root locus of this system is shown in \figref{fig:EC25-26b} below.
-
-For what value(s) of $K$ will the system in \figref{fig:EC25-26a} have a pole at $-1 + \j 1$?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $K = 5$
-    \item $K = \dfrac{1}{5}$
-    \item For no positive value of $K$
-    \item For all positive values of $K$
-	\end{multicols}
-\end{enumerate}
 \begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, blk/.style={draw,thick,minimum width=1.2cm,minimum height=0.8cm}]
-\node (r) at (0,0) {$R(s)$};
-\node[draw,thick,circle,inner sep=0pt,minimum size=0.75cm] (s) at (1.8,0) {};
-\draw (s.north west)--(s.south east); \draw (s.north east)--(s.south west);
-\node[font=\scriptsize] at (1.2,0.32) {$+$}; \node[font=\scriptsize] at (2.05,-0.62) {$-$};
-\node[blk] (k) at (3.6,0) {$K$};
-\node[blk] (g) at (5.4,0) {$G(s)$};
-\node (y) at (7.5,0) {$Y(s)$};
-\draw[->] (r)--(s); \draw[->] (s)--(k); \draw[->] (k)--(g); \draw[->] (g)--(y);
-\draw[->] (6.6,0) -- (6.6,-1.3) -- (1.8,-1.3) -- (s.south);
-\fill (6.6,0) circle(1.5pt);
-\end{tikzpicture}
-
-    \caption{Unity-negative-feedback system (i)}
-    \label{fig:EC25-26a}
-\end{center}
-\end{figure}
-\begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, x=2.1cm, y=2.4cm]
-\draw[dashed,gray] (-4.6,1)--(-0.85,1)--(-0.85,-1)--(-4.6,-1);
-\draw[dashed,gray] (-4,1)--(-4,-1); \draw[dashed,gray] (-3,1)--(-3,-1); \draw[dashed,gray] (-2,1)--(-2,-1); \draw[dashed,gray] (-1,1)--(-1,-1);
-\draw[->] (-4.5,0)--(-0.75,0) node[below right] {Real axis};
-\draw[->] (-4.5,-1.05)--(-4.5,1.15) node[above] {Imaginary axis};
-\foreach \x in {-4,-3,-2,-1} {\draw (\x,0.02)--(\x,-0.02) node[below=4pt,font=\small] {$\x$};}
-\node[left,font=\small] at (-4.5,1) {$j1$}; \node[left,font=\small] at (-4.5,-1) {$-j1$};
-% locus on real axis and circle
-\draw[thick] (-4,0)--(-3.37,0); \draw[thick] (-3.37,0)--(-3,0);
-\draw[thick] (-2,0)--(-1.63,0); \draw[thick] (-1.63,0)--(-1,0);
-\draw[thick] (-2.5,0) ellipse (0.866 and 0.95);
-\draw[thick,-{Stealth}] (-3.7,0)--(-3.9,0); \draw[thick,-{Stealth}] (-3.15,0)--(-3.3,0);
-\draw[thick,-{Stealth}] (-1.8,0)--(-1.7,0); \draw[thick,-{Stealth}] (-1.2,0)--(-1.4,0);
-\draw[thick,-{Stealth}] (-2.45,0.95)--(-2.6,0.95); \draw[thick,-{Stealth}] (-2.55,-0.95)--(-2.4,-0.95);
-\foreach \p in {-4,-3} {\draw[thick,fill=white] (\p,0) circle (0.04);}
-\foreach \p in {-2,-1} {\draw[thick] (\p-0.04,-0.06)--(\p+0.04,0.06) (\p-0.04,0.06)--(\p+0.04,-0.06);}
-\node[draw,font=\scriptsize,align=left,anchor=north west,fill=white] at (-4.5,-1.12) {$\circ$ Open loop zeros\\ $\times$ Open loop poles};
-\end{tikzpicture}
-
-    \caption{Root locus (ii)}
-    \label{fig:EC25-26b}
-\end{center}
+\centering
+\includegraphics[width=1.00\linewidth]{figs/FM_deviation.png}
+\caption{Frequency deviation $\Delta f(t)/f_1$}
+\label{fig:c-fm}
 \end{figure}
 
-%--------------------------------------------------------------- Q27
-\item
-Let $x[n]$ be a discrete-time signal whose $z$-transform is $X\brak{z}$.
 
-Which of the following statements is/are TRUE?
-\hfill (EC~2025)
-\begin{enumerate}
-    \item The discrete-time Fourier transform (DTFT) of $x[n]$ always exists
-    \item The region of convergence (RoC) of $X\brak{z}$ contains neither poles nor zeros
-    \item The discrete-time Fourier transform (DTFT) exists if the region of convergence (RoC) contains the unit circle
-    \item If $x[n] = \alpha\delta[n]$, where $\delta[n]$ is the unit impulse and $\alpha$ is a scalar, then the region of convergence (RoC) is the entire $z$-plane
-\end{enumerate}
-
-%--------------------------------------------------------------- Q28
-\item
-Consider a message signal $m\brak{t}$ which is bandlimited to $[-W, W]$, where $W$ is in Hz. Consider the following two modulation schemes for the message signal:
-\begin{itemize}
-    \item Double sideband-suppressed carrier (DSB-SC):
-    \begin{align}
-    f_{DSB}\brak{t} = A_c\, m\brak{t} \cos\brak{2\pi f_c t}
-    \end{align}
-    \item Amplitude modulation (AM):
-    \begin{align}
-    f_{AM}\brak{t} = A_c \brak{1 + \mu\, m\brak{t}} \cos\brak{2\pi f_c t}
-    \end{align}
-\end{itemize}
-Here, $A_c$ and $f_c$ are the amplitude and frequency (in Hz) of the carrier, respectively. In the case of AM, $\mu$ denotes the modulation index.
-
-Consider the following statements:
-\begin{enumerate}[label=(\roman*), itemsep=0pt, topsep=2pt]
-    \item An envelope detector can be used for demodulation in the DSB-SC scheme if $m\brak{t} > 0$ for all $t$.
-    \item An envelope detector can be used for demodulation in the AM scheme \underline{only} if $m\brak{t} > 0$ for all $t$.
-\end{enumerate}
-Which of the following options is/are correct?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item (i) is TRUE
-    \item (i) is FALSE
-    \item (ii) is TRUE
-    \item (ii) is FALSE
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q32
-\item
-The function $y\brak{t}$ satisfies
-\begin{align}
-t^2 y''\brak{t} - 2t y'\brak{t} + 2y\brak{t} = 0,
-\end{align}
-where $y'\brak{t}$ and $y''\brak{t}$ denote the first and second derivatives of $y\brak{t}$, respectively.
-
-Given $y'\brak{0} = 1$ and $y'\brak{1} = -1$, the maximum value of $y\brak{t}$ over $[0, 1]$ is \underline{\hspace{1cm}} (\textit{rounded off to two decimal places}).
-\hfill (EC~2025)
-
-%--------------------------------------------------------------- Q33
-\item
-The generator matrix of a $(6,3)$ binary linear block code is given by
-\begin{align}
-\vec{G} = \myvec{
-1 & 0 & 0 & 1 & 0 & 1 \\
-0 & 1 & 0 & 0 & 1 & 1 \\
-0 & 0 & 1 & 1 & 1 & 0
-}.
-\end{align}
-The minimum Hamming distance $d_{\min}$ between codewords equals \underline{\hspace{1cm}} (\textit{answer in integer}).
-\hfill (EC~2025)
-
-%--------------------------------------------------------------- Q34
-\item
-All the components in the bandpass filter given below are ideal. The lower $-3$ dB frequency of the filter is 1 MHz.
-
-The upper $-3$ dB frequency (in MHz, \textit{rounded off to the nearest integer}) is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
+\item\label{p:lti}
+Consider the discrete-time system in \figref{fig:p5} with input $x[n]$ and output $y[n]$. Here $h_1[n]$ and $h_2[n]$ are the impulse responses of LTI Subsystems 1 and 2, $\delta[n]$ is the unit impulse, and $b>0$. Assuming $h_2[n]\ne\delta[n]$, the overall system (dashed box) is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{options}
+\item linear and time invariant
+\item linear and time variant
+\item nonlinear and time invariant
+\item nonlinear and time variant
+\end{options}
 \begin{figure}[H]
-\begin{center}
-\begin{circuitikz}[american, scale=0.95, transform shape]
-\node[op amp] (A) at (7.5,0) {};
-\draw (A.-) -- ++(-0.7,0) coordinate (n);
-\fill (n) circle(2pt);
-\draw (n) to[C, l_=$10C$] ++(-2.2,0) to[R, l_=$R$] ++(-2.2,0) node[left] {$v_S$} ;
-\draw (n) -- ++(0,1.3) coordinate (m1) -- ++(0,1.3) coordinate (m2);
-\fill (m1) circle(2pt);
-\draw (m2) to[R, l=$2R$] (m2 -| A.out);
-\draw (m1) to[C, l=$0.1C$] (m1 -| A.out);
-\draw (m2 -| A.out) -- (A.out);
-\fill (m1 -| A.out) circle(2pt);
-\draw (A.+) -- ++(-0.4,0) -- ++(0,-0.5) node[ground] {};
-\draw (A.out) to[short, -o] ++(1,0) node[right] {$v_o$};
-\end{circuitikz}
-
-    \caption{Bandpass filter}
-    \label{fig:EC25-34}
-\end{center}
+\centering
+\includegraphics[width=0.85\linewidth]{figs/fig-lti-system.png}
+\caption{Discrete-time system with subsystems $h_1[n]$, $h_2[n]$ and the added impulses}
+\label{fig:p5}
 \end{figure}
 
-%--------------------------------------------------------------- Q36
-\item
-Let $G\brak{s} = \dfrac{1}{10s^2}$ be the transfer function of a second-order system. A controller $M\brak{s}$ is connected to the system $G\brak{s}$ in the configuration shown below.
 
-Consider the following statements.
-\begin{enumerate}[label=(\roman*), itemsep=0pt, topsep=2pt]
-    \item There exists no controller of the form $M\brak{s} = \dfrac{K_I}{s}$, where $K_I$ is a positive real number, such that the closed loop system is stable.
-    \item There exists at least one controller of the form $M\brak{s} = K_P + sK_D$, where $K_P$ and $K_D$ are positive real numbers, such that the closed loop system is stable.
-\end{enumerate}
-Which one of the following options is correct?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item (i) is TRUE and (ii) is FALSE
-    \item (i) is FALSE and (ii) is TRUE
-    \item Both (i) and (ii) are FALSE
-    \item Both (i) and (ii) are TRUE
-	\end{multicols}
-\end{enumerate}
+\solution
+From the figure, $b\delta[n]$ is added after Subsystem~1 and $-b\delta[n]$ is added after Subsystem~2. Using $\delta[n]*h_2[n]=h_2[n]$ \eqref{eq:F-conv},
+\begin{align}
+y[n]&=h_2[n]*\brak{h_1[n]*x[n]+b\delta[n]}-b\delta[n]
+\\
+&=\brak{h_2*h_1*x}[n]+b\brak{h_2[n]-\delta[n]}
+\end{align}
+For $x[n]=0$ the output is $b\brak{h_2[n]-\delta[n]}\ne0$, but a linear system gives $T\cbrak{0}=0$ \eqref{eq:F-zero}; so the system is nonlinear. For a delayed input only the first term is delayed:
+\begin{align}
+T\cbrak{x[n-k]}&=\brak{h_2*h_1*x}[n-k]+b\brak{h_2[n]-\delta[n]}
+\\
+y[n-k]&=\brak{h_2*h_1*x}[n-k]+b\brak{h_2[n-k]-\delta[n-k]}
+\end{align}
+These differ (the term $-b\delta[n]$ stays at $n=0$ while $\delta[n-k]$ moves, for a stable $h_2$), so \eqref{eq:F-ti} fails and the system is time variant.
 \begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, blk/.style={draw,thick,minimum width=1.3cm,minimum height=0.8cm}]
-\node (r) at (0,0) {$R(s)$};
-\node[draw,thick,circle,inner sep=0pt,minimum size=0.75cm] (s) at (1.8,0) {};
-\draw (s.north west)--(s.south east); \draw (s.north east)--(s.south west);
-\node[font=\scriptsize] at (1.2,0.32) {$+$}; \node[font=\scriptsize] at (2.05,-0.62) {$-$};
-\node[blk] (m) at (3.6,0) {$M(s)$};
-\node[blk] (g) at (5.4,0) {$G(s)$};
-\node (y) at (7.5,0) {$Y(s)$};
-\draw[->] (r)--(s); \draw[->] (s)--(m); \draw[->] (m)--(g); \draw[->] (g)--(y);
-\draw[->] (6.6,0) -- (6.6,-1.3) -- (1.8,-1.3) -- (s.south);
-\fill (6.6,0) circle(1.5pt);
-\end{tikzpicture}
-
-    \caption{Closed-loop configuration}
-    \label{fig:EC25-36}
-\end{center}
+\centering
+\includegraphics[width=1.00\linewidth]{figs/LTI_system.png}
+\caption{Response to $x[n]=0$ (left) and to a shifted input (right)}
+\label{fig:c-lti}
 \end{figure}
 
-%--------------------------------------------------------------- Q37
-\item
-Consider the polynomial $p\brak{s} = s^5 + 7s^4 + 3s^3 - 33s^2 + 2s - 40$. Let $\brak{L, I, R}$ be defined as follows.
-\begin{itemize}
-    \item $L$ is the number of roots of $p\brak{s}$ with negative real parts.
-    \item $I$ is the number of roots of $p\brak{s}$ that are purely imaginary.
-    \item $R$ is the number of roots of $p\brak{s}$ with positive real parts.
-\end{itemize}
-Which one of the following options is correct?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $L = 2,\ I = 2$, and $R = 1$
-    \item $L = 3,\ I = 2$, and $R = 0$
-    \item $L = 1,\ I = 2$, and $R = 2$
-    \item $L = 0,\ I = 4$, and $R = 1$
-	\end{multicols}
-\end{enumerate}
 
-%--------------------------------------------------------------- Q38
-\item
-Consider a continuous-time finite-energy signal $f\brak{t}$ whose Fourier transform vanishes outside the frequency interval $[-\omega_c, \omega_c]$, where $\omega_c$ is in rad/sec.
+\item\label{p:ftbound}
+Consider a continuous-time, real-valued signal $f(t)$ whose Fourier transform
+$F(\omega)=\int_{-\infty}^{\infty}f(t)e^{-\jj\omega t}\dd t$ exists. Which one of the following statements is always TRUE? \hfill (EC~2025)
+\begin{options}
+\item $\abs{F(\omega)}\le\displaystyle\int_{-\infty}^{\infty}\abs{f(t)}\dd t$
+\item $\abs{F(\omega)}>\displaystyle\int_{-\infty}^{\infty}\abs{f(t)}\dd t$
+\item $\abs{F(\omega)}\le\displaystyle\int_{-\infty}^{\infty}f(t)\dd t$
+\item $\abs{F(\omega)}\ge\displaystyle\int_{-\infty}^{\infty}f(t)\dd t$
+\end{options}
 
-The signal $f\brak{t}$ is uniformly sampled to obtain $y\brak{t} = f\brak{t}\, p\brak{t}$. Here,
+\solution
+Test the options with $f(t)=e^{-\abs t}$, for which $\int\abs f\dd t=\int f\dd t=2$. By \eqref{eq:F-ft-pair},
 \begin{align}
-p\brak{t} = \sum_{n=-\infty}^{\infty} \delta\brak{t - \tau - nT_s},
+\abs{F(\omega)}&=\frac{2}{1+\omega^2}\le2\uses{eq:F-ft-pair}
 \end{align}
-with $\delta\brak{t}$ being the Dirac impulse, $T_s > 0$, and $\tau > 0$. The sampled signal $y\brak{t}$ is passed through an ideal lowpass filter $h\brak{t} = \omega_c T_s \dfrac{\sin\brak{\omega_c t}}{\pi \omega_c t}$ with cutoff frequency $\omega_c$ and passband gain $T_s$.
-
-The output of the filter is given by \underline{\hspace{1cm}}.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $f\brak{t}$ if $T_s < \pi/\omega_c$
-    \item $f\brak{t - \tau}$ if $T_s < \pi/\omega_c$
-    \item $f\brak{t - \tau}$ if $T_s < 2\pi/\omega_c$
-    \item $T_s f\brak{t}$ if $T_s < 2\pi/\omega_c$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q39
-\item
-In the circuit below, $M_1$ is an ideal AC voltmeter and $M_2$ is an ideal AC ammeter. The source voltage (in Volts) is $v_s\brak{t} = 100\cos\brak{200t}$.
-
-What should be the value of the variable capacitor $C$ such that the RMS readings on $M_1$ and $M_2$ are 25 V and 5 A, respectively?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $25\ \mu$F
-    \item $4\ \mu$F
-    \item $0.25\ \mu$F
-    \item Insufficient information to find $C$
-	\end{multicols}
-\end{enumerate}
+with strict inequality for $\omega\ne0$. So (B) fails, and (D) ($\abs{F}\ge\int f=2$) fails. For $g(t)=-e^{-\abs t}$ we get $\abs{G(0)}=2>\int g\dd t=-2$, so (C) fails. Option (A) holds for every signal by \eqref{eq:F-ft-bound}:
+\begin{align}
+\abs{F(\omega)}&\le\int_{-\infty}^{\infty}\abs{f(t)}\abs{e^{-\jj\omega t}}\dd t
+\\
+&=\int_{-\infty}^{\infty}\abs{f(t)}\dd t\uses{eq:F-ft-bound}
+\end{align}
 \begin{figure}[H]
-\begin{center}
-\begin{circuitikz}[american, scale=0.95, transform shape]
-\draw (0,0) to[sV, l=$v_s(t)$] (0,3);
-\draw (0,3) -- (1.5,3); \draw (0,0) -- (1.5,0);
-\draw[thick] (1.5,-0.5) rectangle (3.9,3.5);
-\node[align=center] at (2.7,1.5) {Linear\\Time\\Invariant\\Circuit};
-\draw (3.9,3) -- (5.3,3); \draw (3.9,0) -- (8.8,0);
-\fill (5.3,3) circle(2pt) (5.3,0) circle(2pt);
-\draw (5.3,3) to[voltmeter, l_=$M_1$] (5.3,0);
-\draw (5.3,3) to[ammeter, l=$M_2$] (7.3,3) -- (8.8,3);
-\draw (8.8,3) to[R, l=$5\,\Omega$] (8.8,2.2) to[vC, l=$C$] (8.8,1.4) to[L, l=$1$ H] (8.8,0.4) -- (8.8,0);
-\node at (-0.45,2.4) {$+$}; \node at (-0.45,0.6) {$-$};
-\node at (4.9,2.2) {$+$}; \node at (4.9,0.8) {$-$};
-\end{circuitikz}
-
-    \caption{Circuit with ideal meters}
-    \label{fig:EC25-39}
-\end{center}
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Fourier_bound.png}
+\caption{$\abs{F(\omega)}$ for $f(t)=e^{-\abs t}$ against the bounds}
+\label{fig:c-ftb}
 \end{figure}
 
-%--------------------------------------------------------------- Q40
-\item
-The $Z$-parameter matrix of a two port network relates the port voltages and port currents as follows:
-\begin{align}
-\myvec{V_1 \\ V_2} = \vec{Z} \myvec{I_1 \\ I_2}
-\end{align}
-The $Z$-parameter matrix (with each entry in Ohms) of the network shown below is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $\myvec{10/3 & 2/3 \\ 2/3 & 10/3}$
-    \item $\myvec{2/3 & 10/3 \\ 10/3 & 2/3}$
-    \item $\myvec{10 & 2 \\ 2 & 10}$
-    \item $\myvec{10/3 & 1/3 \\ 1/3 & 10/3}$
-	\end{multicols}
-\end{enumerate}
-\begin{figure}[H]
-\begin{center}
-\begin{circuitikz}[american, scale=0.9, transform shape]
-\draw (0,2) to[R, l=$2\Omega$, i=$I_1$] (2.5,2) to[R, l=$2\Omega$] (5,2) to[R, l=$2\Omega$, i_<=$I_2$] (7.5,2);
-\draw (2.5,2) to[R, l=$2\Omega$] (2.5,0);
-\draw (5,2) to[R, l=$2\Omega$] (5,0);
-\draw (0,0) -- (7.5,0);
-\fill (0,2) circle(2pt) (0,0) circle(2pt) (7.5,2) circle(2pt) (7.5,0) circle(2pt) (2.5,2) circle(1.5pt) (5,2) circle(1.5pt) (2.5,0) circle(1.5pt) (5,0) circle(1.5pt);
-\node at (-0.5,1.5) {$+$}; \node at (-0.5,1) {$V_1$}; \node at (-0.5,0.5) {$-$};
-\node at (8,1.5) {$+$}; \node at (8,1) {$V_2$}; \node at (8,0.5) {$-$};
-\end{circuitikz}
 
-    \caption{Two port network}
-    \label{fig:EC25-40}
-\end{center}
+\item\label{p:acpar}
+Let $i_C$, $i_L$ and $i_R$ be the currents through the capacitor, inductor and resistor in the circuit of \figref{fig:p7}. The AC admittances are given in Siemens (S). Which one of the following is TRUE? \hfill (EC~2025)
+\begin{options}
+\item $i_C=0.25\angle180^\circ$ A, $i_L=0.1\angle0^\circ$ A, $i_R=0.2\angle90^\circ$ A
+\item $i_C=4\angle180^\circ$ A, $i_L=10\angle0^\circ$ A, $i_R=5\angle90^\circ$ A
+\item $i_C=0.25\angle270^\circ$ A, $i_L=0.1\angle90^\circ$ A, $i_R=0.2\angle90^\circ$ A
+\item $i_C=4\angle90^\circ$ A, $i_L=10\angle270^\circ$ A, $i_R=5\angle0^\circ$ A
+\end{options}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\linewidth]{figs/fig-ac-parallel.png}
+\caption{Parallel $R$, $L$, $C$ branches with admittances in Siemens}
+\label{fig:p7}
 \end{figure}
 
-%--------------------------------------------------------------- Q41
-\item
-A source transmits symbol $S$ that takes values uniformly at random from the set $\cbrak{-2, 0, 2}$. The receiver obtains $Y = S + N$, where $N$ is a zero-mean Gaussian random variable independent of $S$. The receiver uses the maximum likelihood decoder to estimate the transmitted symbol $S$.
 
-Suppose the probability of symbol estimation error $P_e$ is expressed as follows:
+\solution
+From the figure $\underline V=1\angle90^\circ$ V, and the branch currents are $\underline I=Y\underline V$ \eqref{eq:F-phasor-ohm}. Angles add when phasors are multiplied \eqref{eq:F-polar}:
 \begin{align}
-P_e = \alpha\, P\brak{N > 1},
+\underline I_C&=\brak{\jj0.25}\brak{1\angle90^\circ}=0.25\angle180^\circ\ \mathrm A
+\\
+\underline I_L&=\brak{-\jj0.1}\brak{1\angle90^\circ}=0.1\angle0^\circ\ \mathrm A
+\\
+\underline I_R&=\brak{0.2}\brak{1\angle90^\circ}=0.2\angle90^\circ\ \mathrm A
 \end{align}
-where $P\brak{N > 1}$ denotes the probability that $N$ exceeds 1.
 
-What is the value of $\alpha$?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $\dfrac{1}{3}$
-    \item $1$
-    \item $\dfrac{2}{3}$
-    \item $\dfrac{4}{3}$
-	\end{multicols}
-\end{enumerate}
 
-%--------------------------------------------------------------- Q42
-\item
-Consider a real-valued random process
+\item\label{p:majority}
+A 3-input majority logic gate has inputs $X$, $Y$, $Z$. The output $F$ is logic `1' if two or more inputs are logic `1', and logic `0' if two or more inputs are logic `0'. Which one of the following is a Boolean expression of $F$? \hfill (EC~2025)
+\begin{options}
+\item $XY+YZ+ZX$
+\item $X\oplus Y\oplus Z$
+\item $X+Y+Z$
+\item $XYZ$
+\end{options}
+
+\solution
+$F=1$ exactly when at least two inputs are $1$, i.e.\ for $011,101,110,111$. Pairing each of the first three minterms with $XYZ$:
 \begin{align}
-f\brak{t} = \sum_{n=1}^{N} a_n\, p\brak{t - nT},
+F&=\overline XYZ+X\overline YZ+XY\overline Z+XYZ
+\\
+&=\brak{\overline XYZ+XYZ}+\brak{X\overline YZ+XYZ}+\brak{XY\overline Z+XYZ}
+\\
+&=YZ+XZ+XY\uses{eq:F-maj}
 \end{align}
-where $T > 0$ and $N$ is a positive integer. Here, $p\brak{t} = 1$ for $t \in [0, 0.5T]$ and $0$ otherwise. The coefficients $a_n$ are pairwise independent, zero-mean unit-variance random variables.
-
-Read the following statements about the random process and choose the correct option.
-\begin{enumerate}[label=(\roman*), itemsep=0pt, topsep=2pt]
-    \item The mean of the process $f\brak{t}$ is independent of time $t$.
-    \item The autocorrelation function $E\sbrak{f\brak{t} f\brak{t + \tau}}$ is independent of time $t$ for all $\tau$.
-\end{enumerate}
-(Here, $E\sbrak{\cdot}$ is the expectation operation.)
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item (i) is TRUE and (ii) is FALSE
-    \item Both (i) and (ii) are TRUE
-    \item Both (i) and (ii) are FALSE
-    \item (i) is FALSE and (ii) is TRUE
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q44
-\item
-A 10-bit analog-to-digital converter (ADC) has a sampling frequency of 1 MHz and a full scale voltage of 3.3 V.
-
-For an input sinusoidal signal with frequency 500 kHz, the maximum SNR (in dB, \textit{rounded off to two decimal places}) and the data rate (in Mbps) at the output of the ADC are \underline{\hspace{1cm}}, respectively.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $61.96$ and $10$
-    \item $61.96$ and $5$
-    \item $33.36$ and $10$
-    \item $33.36$ and $5$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q45
-\item
-A positive-edge-triggered sequential circuit is shown below. There are no timing violations in the circuit. Input $P0$ is set to logic `0' and $P1$ is set to logic `1' at all times. The timing diagram of the inputs $SEL$ and $S$ are also shown below.
-
-The sequence of output $Y$ from time $T_0$ to $T_3$ is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $1011$
-    \item $0100$
-    \item $0010$
-    \item $1101$
-	\end{multicols}
-\end{enumerate}
-\begin{figure}[H]
+The truth table (checked with bitwise operators in \texttt{Majority\_gate.py}) shows that only $XY+YZ+ZX$ agrees with $F$ in every row:
 \begin{center}
-\begin{tikzpicture}[>=Stealth, font=\small, x=0.95cm, y=0.95cm]
-% multiplexers
-\foreach \mx in {1.2,6.4} {
-  \draw[thick] (\mx,1.5)--(\mx+0.8,1.1)--(\mx+0.8,-0.3)--(\mx,-0.7)--cycle;
-  \node[font=\scriptsize,right] at (\mx,1.0) {1};
-  \node[font=\scriptsize,right] at (\mx,-0.2) {0};
-  \draw (\mx+0.4,-0.5) -- (\mx+0.4,-1.7) node[below] {\textit{SEL}};
-}
-% flip-flops
-\foreach \fx in {3.6,8.6} {
-  \draw[thick] (\fx,1.4) rectangle (\fx+1.4,-1.0);
-  \node[right] at (\fx+0.02,0.4) {$D$};
-  \node[left] at (\fx+1.38,0.4) {$Q$};
-  \node[left] at (\fx+1.38,-0.6) {$\bar Q$};
-  \draw[thick] (\fx+0.55,-1.0)--(\fx+0.7,-0.78)--(\fx+0.85,-1.0);
-  \draw (\fx+0.7,-1.0) -- (\fx+0.7,-1.7) node[below] {\textit{CLK}};
-}
-% inputs of first mux
-\node[left] at (0,1.0) {$S$}; \draw (0,1.0)--(1.2,1.0);
-\node[left] at (0,-0.2) {\textit{P0}}; \draw (0,-0.2)--(1.2,-0.2);
-% mux1 -> FF1
-\draw (2.0,0.4)--(3.6,0.4);
-% FF1.Q -> mux2 input 1 ;  P1 -> mux2 input 0
-\draw (5.0,0.4)--(5.4,0.4)--(5.4,1.0)--(6.4,1.0);
-\node[left] at (6.0,-0.2) {\textit{P1}}; \draw (6.0,-0.2)--(6.4,-0.2);
-% mux2 -> FF2 ; FF2.Q open
-\draw (7.2,0.4)--(8.6,0.4);
-\draw (10.0,0.4)--(10.4,0.4);
-% XOR
-\node[xor gate US, draw, thick, logic gate inputs=nn] (x) at (11.9,-2.6) {};
-\draw (10.0,-0.6)--(10.8,-0.6) |- (x.input 1);
-\draw (5.0,-0.6)--(5.4,-0.6) |- (x.input 2);
-\draw (x.output)--++(0.5,0) node[right] {$Y$};
-\end{tikzpicture}
-
-    \caption{Sequential circuit}
-    \label{fig:EC25-45a}
+\begin{tabular}{ccc|c|c|c|c|c}
+\toprule
+$X$&$Y$&$Z$&$F$&$XY{+}YZ{+}ZX$&$X{\oplus}Y{\oplus}Z$&$X{+}Y{+}Z$&$XYZ$\\
+\midrule
+0&0&0&0&0&0&0&0\\
+0&0&1&0&0&1&1&0\\
+0&1&0&0&0&1&1&0\\
+0&1&1&1&1&0&1&0\\
+1&0&0&0&0&1&1&0\\
+1&0&1&1&1&0&1&0\\
+1&1&0&1&1&0&1&0\\
+1&1&1&1&1&1&1&1\\
+\bottomrule
+\end{tabular}
 \end{center}
-\end{figure}
+
+
+\item\label{p:adder}
+A full adder and an XOR gate are used to design a digital circuit with inputs $X$, $Y$, $Z$ and output $F$, as in \figref{fig:p9}. The input $Z$ is connected to the carry-in of the full adder. If $Z$ is set to logic `1', the circuit functions as \underline{\hspace{1.5cm}} with $X$ and $Y$ as inputs. \hfill (EC~2025)
+\begin{options}
+\item an adder
+\item a subtractor
+\item a multiplier
+\item a binary to Gray code converter
+\end{options}
 \begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, x=1cm, y=0.9cm, font=\small]
-\node[left] at (-0.1,0.35) {\textit{CLK}}; \node[left] at (-0.1,-1.15) {\textit{SEL}}; \node[left] at (-0.1,-2.65) {$S$};
-% clock: rising edges at T0..T3 = 1.0, 2.4, 3.8, 5.2
-\draw[thick] (0,0)--(1,0)--(1,0.7)--(1.7,0.7)--(1.7,0)--(2.4,0)--(2.4,0.7)--(3.1,0.7)--(3.1,0)--(3.8,0)--(3.8,0.7)--(4.5,0.7)--(4.5,0)--(5.2,0)--(5.2,0.7)--(5.9,0.7)--(5.9,0)--(6.6,0);
-% SEL
-\draw[thick] (0,-1.5)--(1.5,-1.5)--(1.5,-0.8)--(4.1,-0.8)--(4.1,-1.5)--(6.6,-1.5);
-% S
-\draw[thick] (0,-3.0)--(2.7,-3.0)--(2.7,-2.3)--(5.5,-2.3)--(5.5,-3.0)--(6.6,-3.0);
-\foreach \i/\xx in {0/1.0,1/2.4,2/3.8,3/5.2} {
-  \draw[dashed] (\xx,1.0)--(\xx,-3.4);
-  \node[below] at (\xx,-3.4) {$T_\i$};
-}
-\end{tikzpicture}
-
-    \caption{Timing diagram of $CLK$, $SEL$ and $S$}
-    \label{fig:EC25-45b}
-\end{center}
+\centering
+\includegraphics[width=0.25\linewidth]{figs/fig-adder-xor.png}
+\caption{Full adder with an XOR gate on one data input}
+\label{fig:p9}
 \end{figure}
 
-%--------------------------------------------------------------- Q49
-\item
-A square metal sheet of $4\text{ m} \times 4\text{ m}$ is placed on the $x$-$y$ plane as shown in the figure below.
 
-If the surface charge density (in $\mu$C/m$^2$) on the sheet is $\rho_s\brak{x, y} = 4\abs{y}$, then the total charge (in $\mu$C, \textit{rounded off to the nearest integer}) on the sheet is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $16$
-    \item $85$
-    \item $64$
-    \item $256$
-	\end{multicols}
-\end{enumerate}
+\solution
+From the figure the XOR gate forms $Y\oplus Z$ and $Z$ is also the carry-in. For $Z=1$ the XOR gate inverts $Y$, and the adder computes
+\begin{align}
+Y\oplus Z\big|_{Z=1}&=\overline Y\uses{eq:F-xor}
+\\
+F&=X+\overline Y+1\uses{eq:F-twos}
+\\
+&\equiv X-Y\pmod{2^n}
+\end{align}
+For $Z=0$ the same circuit gives $X+Y$.
+
+
+\item\label{p:cubic}
+Consider $f:\mathbb R\to\mathbb R$ defined by $f(x)=2x^3-3x^2-12x+1$. Which of the following statements is/are correct? \hfill (EC~2025)
+\begin{options}
+\item $f$ has no global maximizer
+\item $f$ has no global minimizer
+\item $x=-1$ is a local minimizer of $f$
+\item $x=2$ is a local maximizer of $f$
+\end{options}
+
+\solution
+The critical points follow from $f'(x)=0$, and the second derivative classifies them \eqref{eq:F-second}:
+\begin{align}
+f'(x)&=6x^2-6x-12=6\brak{x+1}\brak{x-2}
+\\
+f''(x)&=12x-6
+\\
+f''(-1)&=-18<0\quad\text{(local maximum, }f(-1)=8)
+\\
+f''(2)&=18>0\quad\text{(local minimum, }f(2)=-19)
+\end{align}
+So (C) and (D) are false. Since $2x^3$ dominates,
+\begin{align}
+\lim_{x\to\infty}f(x)&=+\infty
+\\
+\lim_{x\to-\infty}f(x)&=-\infty
+\end{align}
+and $f$ has neither a global maximizer nor a global minimizer.
 \begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, scale=0.9]
-\draw[->] (-3.2,0) -- (3.6,0) node[right] {$x$ (m)};
-\draw[->] (0,-3.2) -- (0,3.4) node[above] {$y$ (m)};
-\fill[pattern=north east lines, pattern color=gray] (-1.6,-1.6) rectangle (1.6,1.6);
-\draw[thick] (-1.6,-1.6) rectangle (1.6,1.6);
-\node[above left] at (-1.6,1.6) {$(-2,2)$}; \node[above right] at (1.6,1.6) {$(2,2)$};
-\node[below left] at (-1.6,-1.6) {$(-2,-2)$}; \node[below right] at (1.6,-1.6) {$(2,-2)$};
-\end{tikzpicture}
-
-    \caption{Square metal sheet}
-    \label{fig:EC25-49}
-\end{center}
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Cubic_extrema.png}
+\caption{$f(x)=2x^3-3x^2-12x+1$ with its local extrema}
+\label{fig:c-cubic}
 \end{figure}
 
-%--------------------------------------------------------------- Q50
-\item
-An electric field of 0.01 V/m is applied along the length of a copper wire of circular cross-section with diameter 1 mm. Copper has a conductivity of $5.8 \times 10^7$ S/m.
 
-The current (in Amperes, \textit{rounded off to two decimal places}) flowing through the wire is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{4}
-    \item $0.46$
-    \item $1.82$
-    \item $0.58$
-    \item $1.12$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q51
-\item
-Consider a non-negative function $f\brak{x}$ which is continuous and bounded over the interval $[2, 8]$. Let $M$ and $m$ denote, respectively, the maximum and the minimum values of $f\brak{x}$ over the interval.
-
-Among the combinations of $\alpha$ and $\beta$ given below, choose the one(s) for which the inequality
-\begin{align}
-\beta \leq \int_{2}^{8} f\brak{x}\, dx \leq \alpha
-\end{align}
-is guaranteed to hold.
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $\beta = 5m,\ \alpha = 7M$
-    \item $\beta = 6m,\ \alpha = 5M$
-    \item $\beta = 7m,\ \alpha = 6M$
-    \item $\beta = 7m,\ \alpha = 5M$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q52
-\item
-Which of the following statements involving contour integrals (evaluated counter-clockwise) on the unit circle $C$ in the complex plane is/are TRUE?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $\displaystyle\oint_{C} e^{z}\, dz = 0$
-    \item $\displaystyle\oint_{C} z^{n}\, dz = 0$, where $n$ is an even integer
-    \item $\displaystyle\oint_{C} \cos z\, dz \neq 0$
-    \item $\displaystyle\oint_{C} \sec z\, dz \neq 0$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q53
-\item
-Consider a system where $x_1\brak{t}$, $x_2\brak{t}$, and $x_3\brak{t}$ are three internal state signals and $u\brak{t}$ is the input signal. The differential equations governing the system are given by
-\begin{align}
-\frac{d}{dt}\myvec{x_1\brak{t} \\ x_2\brak{t} \\ x_3\brak{t}} = \myvec{2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & 0}\myvec{x_1\brak{t} \\ x_2\brak{t} \\ x_3\brak{t}} + \myvec{1 \\ 1 \\ 1} u\brak{t}.
-\end{align}
-Which of the following statements is/are TRUE?
-\hfill (EC~2025)
-\begin{enumerate}
-    \item The signals $x_1\brak{t}$, $x_2\brak{t}$, and $x_3\brak{t}$ are bounded for all bounded inputs
-    \item There exists a bounded input such that at least one of the signals $x_1\brak{t}$, $x_2\brak{t}$, and $x_3\brak{t}$ is unbounded
-    \item There exists a bounded input such that the signals $x_1\brak{t}$, $x_2\brak{t}$, and $x_3\brak{t}$ are unbounded
-    \item The signals $x_1\brak{t}$, $x_2\brak{t}$, and $x_3\brak{t}$ are unbounded for all bounded inputs
-\end{enumerate}
-
-%--------------------------------------------------------------- Q54
-\item
-The random variable $X$ takes values in $\cbrak{-1, 0, 1}$ with probabilities
-\begin{align}
-P\brak{X = -1} = P\brak{X = 1} = \alpha \quad \text{and} \quad P\brak{X = 0} = 1 - 2\alpha, \quad \text{where } 0 < \alpha < \frac{1}{2}.
-\end{align}
-Let $g\brak{\alpha}$ denote the entropy of $X$ (in bits), parameterized by $\alpha$.
-
-Which of the following statements is/are TRUE?
-\hfill (EC~2025)
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item $g\brak{0.4} > g\brak{0.3}$
-    \item $g\brak{0.3} > g\brak{0.4}$
-    \item $g\brak{0.3} > g\brak{0.25}$
-    \item $g\brak{0.25} > g\brak{0.3}$
-	\end{multicols}
-\end{enumerate}
-
-%--------------------------------------------------------------- Q55
-\item
-Let $f\brak{t}$ be a periodic signal with fundamental period $T_0 > 0$. Consider the signal $y\brak{t} = f\brak{\alpha t}$, where $\alpha > 1$.
-
-The Fourier series expansions of $f\brak{t}$ and $y\brak{t}$ are given by
-\begin{align}
-f\brak{t} = \sum_{k=-\infty}^{\infty} c_k\, e^{\j\frac{2\pi}{T_0}kt} \quad \text{and} \quad y\brak{t} = \sum_{k=-\infty}^{\infty} d_k\, e^{\j\frac{2\pi}{T_0}\alpha kt}.
-\end{align}
-Which of the following statements is/are TRUE?
-\hfill (EC~2025)
-\begin{enumerate}
-    \item $c_k = d_k$ for all $k$
-    \item $y\brak{t}$ is periodic with a fundamental period $\alpha T_0$
-    \item $c_k = d_k/\alpha$ for all $k$
-    \item $y\brak{t}$ is periodic with a fundamental period $T_0/\alpha$
-\end{enumerate}
-
-%--------------------------------------------------------------- Q56
-\item
-Consider a system represented by the block diagram shown below. Which of the following signal flow graphs represent(s) this system? Choose the correct option(s).
-\hfill (EC~2025)
+\item\label{p:rootlocus}
+Consider the unity-negative-feedback system in \figref{fig:p11a}, where the gain $K\ge0$. The root locus of this system is shown in \figref{fig:p11b}. For what value(s) of $K$ will the system in \figref{fig:p11a} have a pole at $-1+\jj1$? \hfill (EC~2025)
+\begin{options}
+\item $K=5$
+\item $K=1/5$
+\item For no positive value of $K$
+\item For all positive values of $K$
+\end{options}
 \begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, blk/.style={draw,minimum width=1.1cm,minimum height=0.7cm}, sm/.style={draw,circle,inner sep=0pt,minimum size=0.6cm}]
-\node (r) at (0,0) {$R(s)$};
-\node[sm] (s1) at (1.4,0) {}; \draw (s1.north west)--(s1.south east); \draw (s1.north east)--(s1.south west);
-\node[font=\tiny] at (1.1,0.28) {$+$}; \node[font=\tiny] at (1.1,-0.3) {$-$};
-\coordinate (a) at (2.6,0);
-\node[blk] (g1) at (4.2,0) {$G_1$};
-\coordinate (b) at (5.8,0);
-\node[sm] (s2) at (7.2,0) {}; \draw (s2.north west)--(s2.south east); \draw (s2.north east)--(s2.south west);
-\node[font=\tiny] at (7.2,0.5) {$+$}; \node[font=\tiny] at (6.85,0.25) {$+$};
-\node (y) at (8.8,0) {$Y(s)$};
-\node[blk] (g2) at (4.2,1.5) {$G_2$};
-\draw[->] (r)--(s1); \draw (s1)--(a); \draw[->] (a)--(g1); \draw (g1)--(b); \draw[->] (b)--(s2); \draw[->] (s2)--(y);
-\fill (a) circle(1.5pt) (b) circle(1.5pt);
-\draw[->] (a) |- (g2); \draw[->] (g2) -| (s2.north);
-\draw[->] (b) -- (5.8,-1.2) -| (s1.south);
-\end{tikzpicture}
-
-    \caption{Block diagram}
-    \label{fig:EC25-56}
-\end{center}
+\centering
+\includegraphics[width=0.75\linewidth]{figs/fig-rootlocus-loop.png}
+\caption{Unity-negative-feedback system with gain $K$ (original Figure (i))}
+\label{fig:p11a}
 \end{figure}
-\begin{enumerate}
-	\begin{multicols}{2}
-    \item \begin{tikzpicture}[>=Stealth, baseline=(current bounding box.center), scale=0.9, transform shape, sfn/.style={draw,circle,inner sep=1.5pt}, lab/.style={font=\scriptsize}]
-\node[sfn,label=left:{$R(s)$}] (r) at (0,0) {}; \node[sfn] (a) at (1.2,0) {}; \node[sfn] (b) at (3.6,0) {}; \node[sfn,label=right:{$Y(s)$}] (y) at (5.0,0) {};
-\draw[->] (r)--(a) node[midway,below,lab] {$1$};
-\draw[->] (a)--(b) node[pos=0.5,above,lab] {$G_1$};
-\draw[->] (a) to[bend left=75] node[above,lab] {$G_2$} (b);
-\draw[->] (b) to[bend left=75] node[below,lab] {$-1$} (a);
-\draw[->] (b)--(y) node[midway,below,lab] {$1$};
-\end{tikzpicture}
 
-    \item \begin{tikzpicture}[>=Stealth, baseline=(current bounding box.center), scale=0.9, transform shape, sfn/.style={draw,circle,inner sep=1.5pt}, lab/.style={font=\scriptsize}]
-\node[sfn,label=left:{$R(s)$}] (r) at (0,0) {}; \node[sfn] (a) at (1.1,0) {}; \node[sfn] (m) at (3.0,0) {}; \node[sfn] (c) at (4.3,0) {}; \node[sfn,label=right:{$Y(s)$}] (y) at (5.4,0) {};
-\draw[->] (r)--(a) node[midway,below,lab] {$1$};
-\draw[->] (a)--(m) node[pos=0.5,above,lab] {$G_1$};
-\draw[->] (m)--(c) node[midway,below,lab] {$1$};
-\draw[->] (c)--(y) node[midway,below,lab] {$1$};
-\draw[->] (a) to[bend left=60] node[above,lab] {$G_2$} (c);
-\draw[->] (m) to[bend left=75] node[below,lab] {$-1$} (a);
-\end{tikzpicture}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.60\linewidth]{figs/fig-rootlocus-plot.png}
+\caption{Root locus of the system (original Figure (ii))}
+\label{fig:p11b}
+\end{figure}
 
-    \item \begin{tikzpicture}[>=Stealth, baseline=(current bounding box.center), scale=0.9, transform shape, sfn/.style={draw,circle,inner sep=1.5pt}, lab/.style={font=\scriptsize}]
-\node[sfn,label=left:{$R(s)$}] (r) at (0,0) {}; \node[sfn] (a) at (1.2,0) {}; \node[sfn] (b) at (3.6,0) {}; \node[sfn,label=right:{$Y(s)$}] (y) at (5.0,0) {};
-\draw[->] (r)--(a) node[midway,below,lab] {$1$};
-\draw[->] (a)--(b) node[pos=0.5,above,lab] {$G_1$};
-\draw[->] (a) to[bend left=75] node[above,lab] {$G_2$} (b);
-\draw[->] (b) to[bend left=75] node[below,lab] {$1$} (a);
-\draw[->] (b)--(y) node[midway,below,lab] {$1$};
-\end{tikzpicture}
 
-    \item \begin{tikzpicture}[>=Stealth, baseline=(current bounding box.center), scale=0.9, transform shape, sfn/.style={draw,circle,inner sep=1.5pt}, lab/.style={font=\scriptsize}]
-\node[sfn,label=left:{$R(s)$}] (r) at (0,0) {}; \node[sfn] (a) at (1.1,0) {}; \node[sfn] (b) at (3.0,0) {}; \node[sfn] (c) at (4.3,0) {}; \node[sfn,label=right:{$Y(s)$}] (y) at (5.4,0) {};
-\draw[->] (r)--(a) node[midway,below,lab] {$1$};
-\draw[->] (a)--(b) node[pos=0.5,above,lab] {$G_1$};
-\draw[->] (b)--(c) node[midway,below,lab] {$1$};
-\draw[->] (c)--(y) node[midway,below,lab] {$1$};
-\draw[->] (a) to[bend left=75] node[above,lab] {$G_2$} (b);
-\draw[->] (c) to[bend left=50] node[below,lab] {$-1$} (a);
-\end{tikzpicture}
+\solution
+Fig.~(ii) shows open-loop zeros at $-3,-4$ and poles at $-1,-2$, so $G(s)=\dfrac{(s+3)(s+4)}{(s+1)(s+2)}$ (a constant factor only rescales $K$). A point is on the locus for some $K\ge0$ only if $G(s_0)$ is real and negative \eqref{eq:F-rootlocus}; at $s_0=-1+\jj$:
+\begin{align}
+G\brak{s_0}&=\frac{\brak{2+\jj}\brak{3+\jj}}{\jj\brak{1+\jj}}\uses{eq:F-rootlocus}
+\\
+&=\frac{5+5\jj}{-1+\jj}
+\\
+&=-5\jj
+\end{align}
+This is not real, so $s_0$ is not on the locus. The same follows from the characteristic polynomial, using $s_0^2=-2\jj$:
+\begin{align}
+\brak{1+K}s_0^2+\brak{3+7K}s_0+\brak{2+12K}&=\brak{5K-1}+\jj\brak{5K+1}
+\end{align}
+The real part vanishes only for $K=\tfrac15$ and the imaginary part only for $K=-\tfrac15$, so no $K$ works. (The complex part of the locus is the circle $\brak{\sigma+2.5}^2+\omega^2=\tfrac34$, which does not pass through $s_0$.)
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Root_locus.png}
+\caption{Root locus computed from $G(s)$; the star marks $s_0=-1+\jj$}
+\label{fig:c-rl}
+\end{figure}
 
-	\end{multicols}
-\end{enumerate}
 
-%--------------------------------------------------------------- Q58
-\item
-Two fair dice (with faces labeled 1, 2, 3, 4, 5, and 6) are rolled. Let the random variable $X$ denote the sum of the outcomes obtained.
+\item\label{p:ztrans}
+Let $x[n]$ be a discrete-time signal whose $z$-transform is $X(z)$. Which of the following statements is/are TRUE? \hfill (EC~2025)
+\begin{options}
+\item The discrete-time Fourier transform (DTFT) of $x[n]$ always exists
+\item The region of convergence (RoC) of $X(z)$ contains neither poles nor zeros
+\item The DTFT exists if the RoC contains the unit circle
+\item If $x[n]=\alpha\delta[n]$, where $\delta[n]$ is the unit impulse and $\alpha$ a scalar, then the RoC is the entire $z$-plane
+\end{options}
 
-The expectation of $X$ is \underline{\hspace{1cm}} (\textit{rounded off to two decimal places}).
-\hfill (EC~2025)
+\solution
+(A) is false: for $x[n]=2^nu[n]$ the ROC is $\abs z>2$, which excludes the unit circle, so the DTFT does not exist. (B) is false: the ROC may contain zeros, for example
+\begin{align}
+x[n]&=\delta[n]-0.5\,\delta[n-1]
+\\
+X(z)&=1-0.5z^{-1}=\frac{z-0.5}{z}
+\end{align}
+has a zero at $z=0.5$, inside its ROC ($z\ne0$). (C) is true: if the ROC contains the unit circle, $X(z)$ evaluated at $z=e^{\jj\omega}$ is the DTFT \eqref{eq:F-ztrans}. (D) is true:
+\begin{align}
+X(z)&=\alpha\sum_{n}\delta[n]z^{-n}
+\\
+&=\alpha\uses{eq:F-ztrans}
+\end{align}
+which is finite for every $z$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/ZTransform_roc.png}
+\caption{Partial sums of $\abs{x[n]e^{-\jj\omega n}}$ for $2^nu[n]$ and $0.5^nu[n]$}
+\label{fig:c-z}
+\end{figure}
 
-%--------------------------------------------------------------- Q59
-\item
+
+\item\label{p:envelope}
+Consider a message signal $m(t)$ bandlimited to $[-W,W]$ ($W$ in Hz) and two schemes:
+\begin{align}
+\text{DSB-SC:}\quad f_{DSB}(t)&=A_cm(t)\cos\brak{2\pi f_ct}
+\\
+\text{AM:}\quad f_{AM}(t)&=A_c\brak{1+\mu m(t)}\cos\brak{2\pi f_ct}
+\end{align}
+Here $A_c$, $f_c$ are the carrier amplitude and frequency, and $\mu$ is the modulation index. Consider the statements:
+\begin{conds}
+\item An envelope detector can be used for demodulation in the DSB-SC scheme if $m(t)>0$ for all $t$.
+\item An envelope detector can be used for demodulation in the AM scheme only if $m(t)>0$ for all $t$.
+\end{conds}
+Which of the following options is/are correct? \hfill (EC~2025)
+\begin{options}
+\item (i) is TRUE
+\item (i) is FALSE
+\item (ii) is TRUE
+\item (ii) is FALSE
+\end{options}
+
+\solution
+An envelope detector outputs the envelope \eqref{eq:F-envelope}. For DSB-SC, if $m(t)>0$ the envelope equals the message:
+\begin{align}
+A_c\abs{m(t)}&=A_cm(t)\uses{eq:F-envelope}
+\end{align}
+so (i) is true. For AM the envelope is $A_c\abs{1+\mu m(t)}$, and recovery needs only $1+\mu m(t)\ge0$. For $m(t)=\cos\brak{2\pi Wt}$ (negative half of the time) and $\mu=\tfrac12$,
+\begin{align}
+1+\mu m(t)&\ge\frac12>0
+\end{align}
+so the detector works although $m(t)>0$ fails, and (ii) is false.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Envelope_detector.png}
+\caption{Envelopes of the DSB-SC and AM waves for $m(t)=\cos2\pi Wt$}
+\label{fig:c-env}
+\end{figure}
+
+
+\item\label{p:eulercauchy}
+The function $y(t)$ satisfies $t^2y''(t)-2ty'(t)+2y(t)=0$, where $y'$ and $y''$ are the first and second derivatives. Given $y'(0)=1$ and $y'(1)=-1$, the maximum value of $y(t)$ over $[0,1]$ is \underline{\hspace{1.5cm}} (rounded off to two decimal places). \hfill (EC~2025)
+
+\solution
+Try $y=t^m$ in the Euler--Cauchy equation:
+\begin{align}
+m\brak{m-1}-2m+2&=\brak{m-1}\brak{m-2}=0\uses{eq:F-euler-cauchy}
+\\
+y&=C_1t+C_2t^2
+\\
+y'&=C_1+2C_2t
+\end{align}
+The conditions $y'(0)=1$ and $y'(1)=-1$ give
+\begin{align}
+C_1&=1
+\\
+1+2C_2&=-1\ \Rightarrow\ C_2=-1
+\\
+y&=t-t^2
+\end{align}
+The maximum on $[0,1]$ is at $y'=0$ \eqref{eq:F-second}:
+\begin{align}
+y'&=1-2t=0\ \Rightarrow\ t=\frac12
+\\
+y_{\max}&=\frac12-\frac14=0.25
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Euler_Cauchy.png}
+\caption{$y(t)=t-t^2$ and $y^{\prime}(t)$}
+\label{fig:c-ec}
+\end{figure}
+
+
+\item\label{p:code}
+The generator matrix of a $(6,3)$ binary linear block code is
+\begin{align}
+\vec G=\myvec{1&0&0&1&0&1\\0&1&0&0&1&1\\0&0&1&1&1&0}
+\end{align}
+The minimum Hamming distance $d_{\min}$ between codewords equals \underline{\hspace{1.5cm}} (answer in integer). \hfill (EC~2025)
+
+\solution
+The codewords are $\vec c=\vec u\vec G$ (mod 2) with $\vec g_1=100101$, $\vec g_2=010011$, $\vec g_3=001110$:
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+message $\vec u$ & codeword $\vec c$ & weight $w(\vec c)$\\
+\midrule
+001 & $\vec g_3=001110$ & 3\\
+010 & $\vec g_2=010011$ & 3\\
+011 & $\vec g_2+\vec g_3=011101$ & 4\\
+100 & $\vec g_1=100101$ & 3\\
+101 & $\vec g_1+\vec g_3=101011$ & 4\\
+110 & $\vec g_1+\vec g_2=110110$ & 4\\
+111 & $\vec g_1+\vec g_2+\vec g_3=111000$ & 3\\
+\bottomrule
+\end{tabular}
+\end{center}
+For a linear code the minimum distance is the smallest non-zero weight:
+\begin{align}
+d_{\min}&=\min_{\vec c\ne\vec 0}w\brak{\vec c}=3\uses{eq:F-dmin}
+\end{align}
+
+
+\item\label{p:bpf}
+All components in the bandpass filter of \figref{fig:p16} are ideal. The lower $-3$~dB frequency is 1~MHz. The upper $-3$~dB frequency (in MHz, rounded off to the nearest integer) is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.60\linewidth]{figs/fig-bandpass-filter.png}
+\caption{Active bandpass filter}
+\label{fig:p16}
+\end{figure}
+
+
+\solution
+From the figure, the input branch is $R$ in series with $10C$ and the feedback branch is $2R$ in parallel with $0.1C$:
+\begin{align}
+Z_i&=R+\frac{1}{s\,10C}=\frac{1+10sRC}{10sC}
+\\
+Z_f&=\frac{2R}{1+0.2sRC}
+\\
+H(s)&=-\frac{Z_f}{Z_i}=-\frac{20\,sRC}{\brak{1+10sRC}\brak{1+0.2sRC}}\uses{eq:F-inv}
+\end{align}
+The corner frequencies follow from the two factors \eqref{eq:F-corner}, and their ratio does not depend on $R,C$:
+\begin{align}
+\omega_L&=\frac{1}{10RC}\uses{eq:F-corner}
+\\
+\omega_H&=\frac{1}{0.2RC}\uses{eq:F-corner}
+\\
+\frac{f_H}{f_L}&=\frac{10RC}{0.2RC}=50
+\\
+f_H&=50\times1\ \mathrm{MHz}=50\ \mathrm{MHz}
+\end{align}
+(The exact $-3$~dB points measured from the peak gain are $0.97$ and $51.7$~MHz; the question uses the corner frequencies.)
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Bandpass_filter.png}
+\caption{Magnitude response of the bandpass filter}
+\label{fig:c-bpf}
+\end{figure}
+
+
+\item\label{p:controller}
+Let $G(s)=\dfrac{1}{10s^2}$ be the transfer function of a second-order system. A controller $M(s)$ is connected to $G(s)$ in the configuration of \figref{fig:p17}. Consider:
+\begin{conds}
+\item There exists no controller $M(s)=\dfrac{K_I}{s}$, with $K_I$ a positive real number, such that the closed-loop system is stable.
+\item There exists at least one controller $M(s)=K_P+sK_D$, with $K_P,K_D$ positive real numbers, such that the closed-loop system is stable.
+\end{conds}
+Which one of the following options is correct? \hfill (EC~2025)
+\begin{options}
+\item (i) is TRUE and (ii) is FALSE
+\item (i) is FALSE and (ii) is TRUE
+\item Both (i) and (ii) are FALSE
+\item Both (i) and (ii) are TRUE
+\end{options}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{figs/fig-controller-loop.png}
+\caption{Controller $M(s)$ and plant $G(s)$ in feedback}
+\label{fig:p17}
+\end{figure}
+
+
+\solution
+From the figure the loop is unity negative feedback with $M(s)$ and $G(s)$ in series, so the characteristic equation is $1+M(s)G(s)=0$ \eqref{eq:F-char}. For $M(s)=K_I/s$,
+\begin{align}
+1+\frac{K_I}{s}\cdot\frac{1}{10s^2}&=0\uses{eq:F-char}
+\\
+10s^3+K_I&=0
+\\
+s&=\brak{\frac{K_I}{10}}^{1/3}e^{\jj\brak{\pi+2\pi k}/3}\uses{eq:F-cubic-roots}
+\end{align}
+The roots are at angles $60^\circ,180^\circ,300^\circ$, so two lie in the right half-plane for every $K_I>0$: (i) is true. For $M(s)=K_P+sK_D$,
+\begin{align}
+1+\frac{K_P+sK_D}{10s^2}&=0
+\\
+10s^2+K_Ds+K_P&=0
+\end{align}
+All coefficients are positive, so this is stable \eqref{eq:F-hurwitz2}: (ii) is true.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Controller_stability.png}
+\caption{Closed-loop poles: integral controller (left), PD controller (right)}
+\label{fig:c-ctrl}
+\end{figure}
+
+
+\item\label{p:routh}
+Consider the polynomial $p(s)=s^5+7s^4+3s^3-33s^2+2s-40$. Let $(L,I,R)$ be defined as: $L$ is the number of roots of $p(s)$ with negative real parts, $I$ is the number of purely imaginary roots, and $R$ is the number of roots with positive real parts. Which one of the following is correct? \hfill (EC~2025)
+\begin{options}
+\item $L=2$, $I=2$, and $R=1$
+\item $L=3$, $I=2$, and $R=0$
+\item $L=1$, $I=2$, and $R=2$
+\item $L=0$, $I=4$, and $R=1$
+\end{options}
+
+\solution
+Expand the product of the factors step by step:
+\begin{align}
+\brak{s+5}\brak{s+4}&=s^2+9s+20
+\\
+\brak{s^2+9s+20}\brak{s-2}&=s^3+7s^2+2s-40
+\\
+\brak{s^3+7s^2+2s-40}\brak{s^2+1}&=s^5+7s^4+3s^3-33s^2+2s-40
+\end{align}
+So $p(s)=\brak{s+5}\brak{s+4}\brak{s-2}\brak{s^2+1}$. The roots $-5,-4$ have negative real part, $\pm\jj$ are purely imaginary and $2$ has positive real part:
+\begin{align}
+\brak{L,I,R}&=\brak{2,2,1}
+\end{align}
+The graph of $p(s)$ crosses the real axis at the three real roots $-5,-4,2$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Routh_roots.png}
+\caption{Graph of $p(s)=s^5+7s^4+3s^3-33s^2+2s-40$ with its real roots}
+\label{fig:c-routh}
+\end{figure}
+
+
+\item\label{p:sampling}
+Consider a continuous-time finite-energy signal $f(t)$ whose Fourier transform vanishes outside $[-\omega_c,\omega_c]$ ($\omega_c$ in rad/s). It is uniformly sampled to obtain $y(t)=f(t)p(t)$, where
+\begin{align}
+p(t)=\sum_{n=-\infty}^{\infty}\delta\brak{t-\tau-nT_s},\qquad T_s>0,\ \tau>0
+\end{align}
+and $\delta(t)$ is the Dirac impulse. The sampled signal $y(t)$ is passed through an ideal lowpass filter
+\begin{align}
+h(t)=\omega_cT_s\frac{\sin\brak{\omega_ct}}{\pi\omega_ct}
+\end{align}
+with cutoff frequency $\omega_c$ and passband gain $T_s$. The output of the filter is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{options}
+\item $f(t)$ if $T_s<\pi/\omega_c$
+\item $f(t-\tau)$ if $T_s<\pi/\omega_c$
+\item $f(t-\tau)$ if $T_s<2\pi/\omega_c$
+\item $T_sf(t)$ if $T_s<2\pi/\omega_c$
+\end{options}
+
+\solution
+Multiplying $f(t)$ by the shifted impulse train gives the spectrum \eqref{eq:F-sampled}, where the delay $\tau$ only appears as a phase on the replicas $k\ne0$:
+\begin{align}
+Y(\omega)&=\frac{1}{T_s}\sum_{k}e^{-\jj k\omega_s\tau}F\brak{\omega-k\omega_s}\uses{eq:F-sampled}
+\end{align}
+The lowpass filter (gain $T_s$, cutoff $\omega_c$) keeps only $k=0$ when the replicas do not overlap:
+\begin{align}
+\omega_s=\frac{2\pi}{T_s}&>2\omega_c\ \iff\ T_s<\frac{\pi}{\omega_c}\uses{eq:F-nyquist}
+\\
+H(\omega)Y(\omega)&=T_s\cdot\frac{1}{T_s}F(\omega)=F(\omega)\uses{eq:F-lpf}
+\end{align}
+so the output is $f(t)$. The samples are values of $f$ itself on a shifted grid, so there is no delay.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Sampling_offset.png}
+\caption{Reconstruction equals $f(t)$, not $f(t-\tau)$}
+\label{fig:c-samp}
+\end{figure}
+
+
+\item\label{p:meters}
+In the circuit of \figref{fig:p20}, $M_1$ is an ideal AC voltmeter and $M_2$ an ideal AC ammeter. The source voltage (in Volts) is $v_s(t)=100\cos(200t)$. What should be the value of the variable capacitor $C$ such that the RMS readings on $M_1$ and $M_2$ are 25~V and 5~A, respectively? \hfill (EC~2025)
+\begin{options}
+\item $25\ \mu$F
+\item $4\ \mu$F
+\item $0.25\ \mu$F
+\item Insufficient information to find $C$
+\end{options}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.60\linewidth]{figs/fig-ac-meters.png}
+\caption{Circuit with voltmeter $M_1$, ammeter $M_2$ and variable capacitor $C$}
+\label{fig:p20}
+\end{figure}
+
+
+\solution
+From the figure, $M_1$ reads the voltage across the branch $5\ \Omega$, $C$, $1$~H and $M_2$ reads its current:
+\begin{align}
+\abs Z&=\frac{V}{I}=\frac{25}{5}=5\ \Omega
+\\
+\abs Z&=\sqrt{R^2+\brak{\omega L-\frac{1}{\omega C}}^2}=R=5\ \Omega\uses{eq:F-series-rlc}
+\end{align}
+So the net reactance is zero, and with $\omega=200$ rad/s, $L=1$ H:
+\begin{align}
+C&=\frac{1}{\omega^2L}=\frac{1}{200^2\times1}=25\ \mu\mathrm F\uses{eq:F-resonance}
+\end{align}
+
+
+\item\label{p:zparam}
+The $Z$-parameter matrix of a two-port network relates port voltages and currents by
+\begin{align}
+\myvec{V_1\\V_2}=\vec Z\myvec{I_1\\I_2}
+\end{align}
+The $Z$-parameter matrix (each entry in Ohms) of the network in \figref{fig:p21} is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{options}
+\item $\myvec{10/3&2/3\\2/3&10/3}$
+\item $\myvec{2/3&10/3\\10/3&2/3}$
+\item $\myvec{10&2\\2&10}$
+\item $\myvec{10/3&1/3\\1/3&10/3}$
+\end{options}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\linewidth]{figs/fig-two-port.png}
+\caption{Resistive two-port network}
+\label{fig:p21}
+\end{figure}
+
+
+\solution
+The figure is a ladder of $2\ \Omega$ resistors. With port~2 open ($I_2=0$) no current flows in the last series resistor. Seen from node~$A$, the shunt $2\ \Omega$ is in parallel with $2+2$:
+\begin{align}
+R_A&=2\parallel\brak{2+2}=\frac{2\cdot4}{2+4}=\frac43\ \Omega\uses{eq:F-rnet}
+\\
+z_{11}&=\frac{V_1}{I_1}=2+R_A=\frac{10}{3}\ \Omega\uses{eq:F-zparam}
+\end{align}
+The port-2 voltage is the divider of $V_A=I_1R_A$ through the series $2\ \Omega$ and the shunt $2\ \Omega$:
+\begin{align}
+V_2&=\frac{2}{2+2}V_A=\frac12\cdot\frac43I_1=\frac23I_1
+\\
+z_{21}&=\frac{V_2}{I_1}=\frac23\ \Omega\uses{eq:F-zparam}
+\end{align}
+The network is reciprocal and symmetric, so $z_{12}=z_{21}$ and $z_{22}=z_{11}$:
+\begin{align}
+\vec Z&=\myvec{10/3&2/3\\2/3&10/3}\ \Omega\uses{eq:F-zdef}
+\end{align}
+
+
+\item\label{p:ml}
+A source transmits a symbol $S$ taking values uniformly at random from $\{-2,0,2\}$. The receiver obtains $Y=S+N$, where $N$ is a zero-mean Gaussian random variable independent of $S$, and uses the maximum-likelihood decoder. Suppose the probability of symbol error is $P_e=\alpha\,\pr{N>1}$, where $\pr{N>1}$ is the probability that $N$ exceeds 1. What is $\alpha$? \hfill (EC~2025)
+\begin{options}
+\item $1/3$
+\item $1$
+\item $2/3$
+\item $4/3$
+\end{options}
+
+\solution
+ML detection picks the nearest symbol \eqref{eq:F-ml}, so the decision boundaries are the midpoints $-1$ and $1$. Let $p=\pr{N>1}$; by symmetry $\pr{N<-1}=p$ \eqref{eq:F-gauss-sym}. Then
+\begin{align}
+\pr{\text{error}\mid S=-2}&=\pr{N>1}=p
+\\
+\pr{\text{error}\mid S=0}&=\pr{\abs N>1}=2p\uses{eq:F-gauss-sym}
+\\
+\pr{\text{error}\mid S=2}&=\pr{N<-1}=p
+\\
+P_e&=\frac13\brak{p+2p+p}=\frac43\,p
+\end{align}
+so $\alpha=\tfrac43$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/ML_detection.png}
+\caption{Likelihoods of the three symbols and the ML thresholds}
+\label{fig:c-ml}
+\end{figure}
+
+
+\item\label{p:randproc}
+Consider the real-valued random process
+\begin{align}
+f(t)=\sum_{n=1}^{N}a_n\,p\brak{t-nT}
+\end{align}
+where $T>0$, $N$ is a positive integer, $p(t)=1$ for $t\in[0,0.5T]$ and $0$ otherwise, and the coefficients $a_n$ are pairwise independent, zero-mean, unit-variance random variables. Consider:
+\begin{conds}
+\item The mean of the process $f(t)$ is independent of time $t$.
+\item The autocorrelation $E[f(t)f(t+\tau)]$ is independent of $t$ for all $\tau$.
+\end{conds}
+Choose the correct option. \hfill (EC~2025)
+\begin{options}
+\item (i) is TRUE and (ii) is FALSE
+\item Both (i) and (ii) are TRUE
+\item Both (i) and (ii) are FALSE
+\item (i) is FALSE and (ii) is TRUE
+\end{options}
+
+\solution
+Since $E[a_n]=0$, the mean is zero for every $t$, so (i) is true:
+\begin{align}
+E\sbrak{f(t)}&=\sum_{n=1}^{N}E\sbrak{a_n}\,p\brak{t-nT}=0\uses{eq:F-expect}
+\end{align}
+The cross terms of the autocorrelation vanish because $E[a_na_m]=\delta_{n-m}$ \eqref{eq:F-uncorr}. For $\tau=0$, using $p^2=p$:
+\begin{align}
+E\sbrak{f(t)f(t+\tau)}&=\sum_{n=1}^{N}p\brak{t-nT}\,p\brak{t+\tau-nT}\uses{eq:F-uncorr}
+\\
+E\sbrak{f(t)^2}&=\sum_{n=1}^{N}p\brak{t-nT}\in\cbrak{0,1}
+\end{align}
+It equals $1$ for $t\in\sbrak{nT,\,nT+0.5T}$ and $0$ just after, so it depends on $t$ and (ii) is false.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Random_process.png}
+\caption{$E[f(t)]=0$ but $E[f(t)^2]$ depends on $t$}
+\label{fig:c-rp}
+\end{figure}
+
+
+\item\label{p:adc}
+A 10-bit analog-to-digital converter (ADC) has a sampling frequency of 1~MHz and a full-scale voltage of 3.3~V. For an input sinusoid of frequency 500~kHz, the maximum SNR (in dB, two decimal places) and the data rate (in Mbps) at the ADC output are \underline{\hspace{1.5cm}}, respectively. \hfill (EC~2025)
+\begin{options}
+\item 61.96 and 10
+\item 61.96 and 5
+\item 33.36 and 10
+\item 33.36 and 5
+\end{options}
+
+\solution
+For $N=10$ bits and $f_s=1$~MHz \eqref{eq:F-adc}:
+\begin{align}
+\mathrm{SNR}_{\max}&=6.02\brak{10}+1.76=61.96\ \mathrm{dB}\uses{eq:F-adc}
+\\
+R_b&=f_sN=\brak{10^6}\brak{10}=10\ \mathrm{Mbps}\uses{eq:F-adc}
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/ADC_snr.png}
+\caption{Maximum SNR of an ideal ADC against the number of bits}
+\label{fig:c-adc}
+\end{figure}
+
+
+\item\label{p:seq}
+A positive-edge-triggered sequential circuit is shown in \figref{fig:p25}. There are no timing violations. Input $P_0$ is logic `0' and $P_1$ is logic `1' at all times. The timing diagram of $SEL$ and $S$ is also shown. The sequence of output $Y$ from time $T_0$ to $T_3$ is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{options}
+\item 1011
+\item 0100
+\item 0010
+\item 1101
+\end{options}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\linewidth]{figs/fig-sequential-circuit.png}
+\caption{Sequential circuit with multiplexers and flip-flops, and timing diagram of $SEL$ and $S$}
+\label{fig:p25}
+\end{figure}
+
+
+\solution
+From the figure, with $P_0=0$ and $P_1=1$, each flip-flop copies its input at a rising edge \eqref{eq:F-dff}, and the gate output is $Y=\overline{Q_1}\oplus\overline{Q_2}=Q_1\oplus Q_2$:
+\begin{align}
+Q_1^{+}&=\begin{cases}S,&SEL=1\\0,&SEL=0\end{cases}\uses{eq:F-dff}
+\\
+Q_2^{+}&=\begin{cases}Q_1,&SEL=1\\1,&SEL=0\end{cases}\uses{eq:F-dff}
+\\
+Y&=Q_1\oplus Q_2
+\end{align}
+The marks $T_0,\dots,T_3$ are at the falling edges of $CLK$, so $Y$ is read just after the rising edge before each mark. Reading $SEL$ and $S$ at those four rising edges and updating ($Q_2$ uses the old $Q_1$):
+\begin{center}
+\begin{tabular}{c|cc|ccc}
+\toprule
+edge before & $SEL$ & $S$ & $Q_1$ & $Q_2$ & $Y$\\
+\midrule
+$T_0$ & 0 & 0 & 0 & 1 & 1\\
+$T_1$ & 1 & 0 & 0 & 0 & 0\\
+$T_2$ & 1 & 1 & 1 & 0 & 1\\
+$T_3$ & 0 & 1 & 0 & 1 & 1\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first edge has $SEL=0$, which fixes the state, so the initial state does not matter. The output sequence is $Y=1011$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Sequential_circuit.png}
+\caption{Simulated waveforms of $CLK$, $SEL$, $S$, $Q_1$, $Q_2$ and $Y$}
+\label{fig:c-seq}
+\end{figure}
+
+
+\item\label{p:charge}
+A square metal sheet of $4\ \mathrm m\times4\ \mathrm m$ is placed on the $x$--$y$ plane as in \figref{fig:p26}. If the surface charge density (in $\mu$C/m$^2$) is $\rho_s(x,y)=4\abs y$, the total charge (in $\mu$C, rounded off to the nearest integer) on the sheet is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{options}
+\item 16
+\item 85
+\item 64
+\item 256
+\end{options}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.45\linewidth]{figs/fig-square-sheet.png}
+\caption{Square metal sheet in the $x$--$y$ plane}
+\label{fig:p26}
+\end{figure}
+
+
+\solution
+From the figure the sheet is the square $-2\le x\le2$, $-2\le y\le2$ (in m). The integrand separates and $\abs y$ is even:
+\begin{align}
+Q&=\int_{-2}^{2}\int_{-2}^{2}4\abs y\dd x\dd y\uses{eq:F-charge}
+\\
+&=4\brak{\int_{-2}^{2}\dd x}\brak{2\int_0^2y\dd y}
+\\
+&=4\cdot4\cdot4=64\ \mu\mathrm C
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Sheet_charge.png}
+\caption{Charge density $\rho_s=4\abs y$ on the sheet}
+\label{fig:c-sheet}
+\end{figure}
+
+
+\item\label{p:wire}
+An electric field of $0.01$~V/m is applied along the length of a copper wire of circular cross-section with diameter 1~mm. Copper has conductivity $5.8\times10^7$~S/m. The current (in Amperes, two decimal places) through the wire is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{options}
+\item 0.46
+\item 1.82
+\item 0.58
+\item 1.12
+\end{options}
+
+\solution
+The current density is $J=\sigma E$, and the radius is $r=0.5$~mm:
+\begin{align}
+J&=\sigma E=\brak{5.8\times10^7}\brak{0.01}=5.8\times10^5\ \mathrm{A/m^2}\uses{eq:F-J}
+\\
+I&=JA=5.8\times10^5\cdot\pi\brak{5\times10^{-4}}^2
+\\
+&=0.4555\ \mathrm A\approx0.46\ \mathrm A
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Copper_wire.png}
+\caption{Current in the wire against its diameter}
+\label{fig:c-wire}
+\end{figure}
+
+
+\item\label{p:intbound}
+Consider a non-negative function $f(x)$, continuous and bounded on $[2,8]$. Let $M$ and $m$ be its maximum and minimum on the interval. Choose the combination(s) of $\alpha$ and $\beta$ for which
+\begin{align}
+\beta\le\int_2^8f(x)\dd x\le\alpha
+\end{align}
+is guaranteed to hold. \hfill (EC~2025)
+\begin{options}
+\item $\beta=5m,\ \alpha=7M$
+\item $\beta=6m,\ \alpha=5M$
+\item $\beta=7m,\ \alpha=6M$
+\item $\beta=7m,\ \alpha=5M$
+\end{options}
+
+\solution
+The interval has length $8-2=6$, so
+\begin{align}
+6m&\le\int_2^8f(x)\dd x\le6M\uses{eq:F-intbound}
+\end{align}
+The inequality $\beta\le\int f\le\alpha$ is guaranteed when $\beta\le6m$ and $\alpha\ge6M$ (with $m,M\ge0$). Option (A) has $5m\le6m$ and $7M\ge6M$; (B) has $\alpha=5M<6M$; (C) has $\beta=7m>6m$; (D) fails both.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Integral_bounds.png}
+\caption{The integral lies between $6m$ and $6M$}
+\label{fig:c-ib}
+\end{figure}
+
+
+\item\label{p:contour}
+Which of the following statements about contour integrals (counter-clockwise) on the unit circle $C$ in the complex plane is/are TRUE? \hfill (EC~2025)
+\begin{options}
+\item $\displaystyle\oint_Ce^z\dd z=0$
+\item $\displaystyle\oint_Cz^n\dd z=0$, where $n$ is an even integer
+\item $\displaystyle\oint_C\cos z\dd z\ne0$
+\item $\displaystyle\oint_C\sec z\dd z\ne0$
+\end{options}
+
+\solution
+The functions $e^z$ and $\cos z$ are analytic everywhere, so both integrals vanish \eqref{eq:F-cauchy}:
+\begin{align}
+\oint_Ce^z\dd z&=0\uses{eq:F-cauchy}
+\\
+\oint_C\cos z\dd z&=0\uses{eq:F-cauchy}
+\end{align}
+(A) is true and (C) is false. For integer $n\ne-1$, in particular every even $n$,
+\begin{align}
+\oint_Cz^n\dd z&=0\uses{eq:F-zn}
+\end{align}
+so (B) is true. The poles of $\sec z$ are at $\pm\pi/2,\pm3\pi/2,\dots$ \eqref{eq:F-sec}, all outside $\abs z=1$, so
+\begin{align}
+\oint_C\sec z\dd z&=0\uses{eq:F-cauchy}
+\end{align}
+and (D) is false.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Contour_integrals.png}
+\caption{Unit circle and the poles of $\sec z$ and $1/z$}
+\label{fig:c-cont}
+\end{figure}
+
+
+\item\label{p:state}
+Consider a system with internal states $x_1(t),x_2(t),x_3(t)$ and input $u(t)$ governed by
+\begin{align}
+\frac{d}{dt}\myvec{x_1\\x_2\\x_3}=\myvec{2&0&0\\0&-2&0\\0&0&0}\myvec{x_1\\x_2\\x_3}+\myvec{1\\1\\1}u(t)
+\end{align}
+Which of the following statements is/are TRUE? \hfill (EC~2025)
+\begin{options}
+\item The signals $x_1,x_2,x_3$ are bounded for all bounded inputs.
+\item There exists a bounded input such that at least one of $x_1,x_2,x_3$ is unbounded.
+\item There exists a bounded input such that the signals $x_1,x_2,x_3$ are unbounded.
+\item The signals $x_1,x_2,x_3$ are unbounded for all bounded inputs.
+\end{options}
+
+\solution
+Since $\vec A$ is diagonal, the states decouple:
+\begin{align}
+\dot x_1&=2x_1+u
+\\
+\dot x_2&=-2x_2+u
+\\
+\dot x_3&=u
+\end{align}
+For $u\equiv1$ and zero initial state, $x_1$ (eigenvalue $+2$) and $x_3$ (eigenvalue $0$, an integrator) grow without bound, while $x_2$ (eigenvalue $-2$) stays bounded for every bounded input:
+\begin{align}
+x_1(t)&=\frac12\brak{e^{2t}-1}\to\infty\uses{eq:F-state-unbounded}
+\\
+x_3(t)&=t\to\infty\uses{eq:F-state-integrator}
+\\
+\abs{x_2(t)}&\le\abs{x_2(0)}+\frac{U}{2}\uses{eq:F-state-bounded}
+\end{align}
+So (B) is true. (C) and (D) need all three signals unbounded, which fails because of $x_2$; (A) is false.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/State_bounded.png}
+\caption{State responses to $u\equiv1$ with zero initial state}
+\label{fig:c-state}
+\end{figure}
+
+
+\item\label{p:entropy}
+The random variable $X$ takes values in $\{-1,0,1\}$ with $\pr{X=-1}=\pr{X=1}=\alpha$ and $\pr{X=0}=1-2\alpha$, where $0<\alpha<\tfrac12$. Let $g(\alpha)$ be the entropy of $X$ in bits. Which of the following is/are TRUE? \hfill (EC~2025)
+\begin{options}
+\item $g(0.4)>g(0.3)$
+\item $g(0.3)>g(0.4)$
+\item $g(0.3)>g(0.25)$
+\item $g(0.25)>g(0.3)$
+\end{options}
+
+\solution
+\begin{align}
+g(\alpha)&=-2\alpha\log_2\alpha-\brak{1-2\alpha}\log_2\brak{1-2\alpha}\uses{eq:F-entropy}
+\\
+g'(\alpha)&=2\log_2\frac{1-2\alpha}{\alpha}
+\end{align}
+$g'>0$ for $\alpha<\tfrac13$, so $g$ increases up to $\tfrac13$: $g(0.3)>g(0.25)$. The points $0.3$ and $0.4$ lie on opposite sides of the maximum, so evaluate directly:
+\begin{align}
+g(0.25)&=0.5\cdot2+0.5\cdot1=1.5000
+\\
+g(0.3)&=-0.6\log_20.3-0.4\log_20.4=1.5710
+\\
+g(0.4)&=-0.8\log_20.4-0.2\log_20.2=1.5219
+\end{align}
+Hence $g(0.3)>g(0.4)$ and $g(0.3)>g(0.25)$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Entropy_ternary.png}
+\caption{Entropy $g(\alpha)$ with $\alpha=0.25,0.3,0.4$ marked}
+\label{fig:c-ent}
+\end{figure}
+
+
+\item\label{p:fsscale}
+Let $f(t)$ be periodic with fundamental period $T_0>0$, and $y(t)=f(\alpha t)$ with $\alpha>1$. Their Fourier series are
+\begin{align}
+f(t)=\sum_{k=-\infty}^{\infty}c_k\,e^{\jj\frac{2\pi}{T_0}kt},\qquad
+y(t)=\sum_{k=-\infty}^{\infty}d_k\,e^{\jj\frac{2\pi\alpha}{T_0}kt}
+\end{align}
+Which of the following is/are TRUE? \hfill (EC~2025)
+\begin{options}
+\item $c_k=d_k$ for all $k$
+\item $y(t)$ is periodic with fundamental period $\alpha T_0$
+\item $c_k=d_k/\alpha$ for all $k$
+\item $y(t)$ is periodic with fundamental period $T_0/\alpha$
+\end{options}
+
+\solution
+Since $y\brak{t+T_0/\alpha}=f\brak{\alpha t+T_0}=y(t)$, the period of $y(t)=f(\alpha t)$ is $T_0/\alpha$ \eqref{eq:F-fs-period}. Replacing $t$ by $\alpha t$ in the series of $f$:
+\begin{align}
+y(t)&=f(\alpha t)=\sum_{k}c_k\,e^{\jj2\pi k\alpha t/T_0}\uses{eq:F-fs-scale}
+\end{align}
+Comparing with the series of $y(t)$ gives $d_k=c_k$ for all $k$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Fourier_scaling.png}
+\caption{$f(t)$ and $f(3t)$ have identical Fourier coefficients}
+\label{fig:c-fs}
+\end{figure}
+
+
+\item\label{p:sfg}
+Consider the system represented by the block diagram in \figref{fig:p56a}. Which of the signal flow graphs in \figref{fig:p56b} represent(s) this system? Choose the correct option(s). \hfill (EC~2025)
+\begin{options}
+\item graph (A)
+\item graph (B)
+\item graph (C)
+\item graph (D)
+\end{options}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{figs/fig-sfg-blockdiagram.png}
+\caption{Block diagram of the system}
+\label{fig:p56a}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\linewidth]{figs/fig-sfg-options.png}
+\caption{Candidate signal flow graphs (A)--(D)}
+\label{fig:p56b}
+\end{figure}
+
+
+\solution
+From the block diagram, the first junction gives $e=R-G_1e$ and the output is $Y=\brak{G_1+G_2}e$:
+\begin{align}
+e&=\frac{R}{1+G_1}
+\\
+\frac{Y}{R}&=\frac{G_1+G_2}{1+G_1}
+\end{align}
+Applying Mason's formula \eqref{eq:F-mason} to each graph (forward paths $G_1,G_2$ in all four):
+\begin{center}
+\begin{tabular}{c|l|c}
+\toprule
+graph & loop gains & $T=Y/R$\\
+\midrule
+(A) & $-G_1,\ -G_2$ & $\dfrac{G_1+G_2}{1+G_1+G_2}$\\[6pt]
+(B) & $-G_1$ & $\dfrac{G_1+G_2}{1+G_1}$\\[6pt]
+(C) & $+G_1,\ +G_2$ & $\dfrac{G_1+G_2}{1-G_1-G_2}$\\[6pt]
+(D) & $-G_1,\ -G_2$ & $\dfrac{G_1+G_2}{1+G_1+G_2}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Only graph (B), whose single loop is $G_1$ closed by $-1$, equals $\dfrac{G_1+G_2}{1+G_1}$.
+
+
+\item\label{p:dice}
+Two fair dice (faces $1,\dots,6$) are rolled. Let the random variable $X$ be the sum of the outcomes. The expectation of $X$ is \underline{\hspace{1.5cm}} (rounded off to two decimal places). \hfill (EC~2025)
+
+\solution
+Let $X=X_1+X_2$, where $X_i$ is the outcome of die $i$:
+\begin{align}
+E\sbrak{X_i}&=\frac{1+2+3+4+5+6}{6}=3.5
+\\
+E\sbrak{X}&=E\sbrak{X_1}+E\sbrak{X_2}=7.00\uses{eq:F-expect}
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Dice_sum.png}
+\caption{Distribution of the sum of two dice}
+\label{fig:c-dice}
+\end{figure}
+
+
+\item\label{p:ls}
 Consider the vectors
 \begin{align}
-\vec{a} = \myvec{1 \\ 1}, \qquad \vec{b} = \myvec{0 \\ 3\sqrt{2}}.
+\vec a=\myvec{1\\1},\qquad\vec b=\myvec{0\\3\sqrt2}
 \end{align}
-For real-valued scalar variable $x$, the value of
+For a real scalar $x$, the value of $\min_x\norm{x\vec a-\vec b}_2$ is \underline{\hspace{1.5cm}} (rounded off to two decimal places), where $\norm{\vec y}_2=\sqrt{y_1^2+y_2^2}$. \hfill (EC~2025)
+
+\solution
 \begin{align}
-\min_{x} \norm{\vec{a}x - \vec{b}}_2
+x^*&=\frac{\vec a^{\top}\vec b}{\vec a^{\top}\vec a}=\frac{3\sqrt2}{2}\uses{eq:F-ls}
+\\
+x^*\vec a-\vec b&=\myvec{\tfrac{3\sqrt2}{2}\\-\tfrac{3\sqrt2}{2}}
+\\
+\norm{x^*\vec a-\vec b}&=\sqrt{2\cdot\frac{18}{4}}=3.00
 \end{align}
-is \underline{\hspace{1cm}} (\textit{rounded off to two decimal places}).
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Least_squares.png}
+\caption{Projection of $\mathbf b$ on the line through $\mathbf a$}
+\label{fig:c-ls}
+\end{figure}
 
-$\norm{\cdot}_2$ denotes the Euclidean norm, i.e., for $\vec{y} = \myvec{y_1 \\ y_2}$, $\norm{\vec{y}}_2 = \sqrt{y_1^2 + y_2^2}$.
-\hfill (EC~2025)
 
-%--------------------------------------------------------------- Q60
-\item
-$X$ and $Y$ are Bernoulli random variables taking values in $\cbrak{0, 1}$. The joint probability mass function of the random variables is given by:
+\item\label{p:mi}
+$X$ and $Y$ are Bernoulli random variables on $\{0,1\}$ with joint pmf
 \begin{align}
-\begin{split}
-P\brak{X = 0, Y = 0} &= 0.06 \\
-P\brak{X = 0, Y = 1} &= 0.14 \\
-P\brak{X = 1, Y = 0} &= 0.24 \\
-P\brak{X = 1, Y = 1} &= 0.56
-\end{split}
+\pr{0,0}=0.06,\quad\pr{0,1}=0.14,\quad\pr{1,0}=0.24,\quad\pr{1,1}=0.56
 \end{align}
-The mutual information $I\brak{X; Y}$ is \underline{\hspace{1cm}} (\textit{rounded off to two decimal places}).
-\hfill (EC~2025)
+The mutual information $I(X;Y)$ is \underline{\hspace{1.5cm}} (rounded off to two decimal places). \hfill (EC~2025)
 
-%--------------------------------------------------------------- Q61
-\item
-The diode in the circuit shown below is ideal. The input voltage (in Volts) is given by $V_I = 10 \sin 100\pi t$, where time $t$ is in seconds.
-
-The time duration (in ms, \textit{rounded off to two decimal places}) for which the diode is forward biased during one period of the input is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
+\solution
+The marginals follow by summing the joint PMF \eqref{eq:F-marginal}:
+\begin{align}
+\pr{X=0}&=0.06+0.14=0.20
+\\
+\pr{X=1}&=0.24+0.56=0.80
+\\
+\pr{Y=0}&=0.06+0.24=0.30
+\\
+\pr{Y=1}&=0.14+0.56=0.70
+\end{align}
+Every joint probability equals the product of the marginals, so $X$ and $Y$ are independent \eqref{eq:F-indep}:
+\begin{align}
+\pr{X=0}\pr{Y=0}&=0.2\cdot0.3=0.06
+\\
+\pr{X=1}\pr{Y=1}&=0.8\cdot0.7=0.56
+\\
+I\brak{X;Y}&=0\uses{eq:F-mi-zero}
+\end{align}
 \begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, scale=0.95]
-\draw (0,2) node[circle,draw,inner sep=1.5pt,fill=white] {} -- (1,2);
-\draw (1,2) to[generic, l=$R$] (3,2) -- (4.2,2) -- (4.2,1.6);
-\draw[thick] (4.2,1.6) -- (4.2,1.4); \draw[thick] (3.9,1.4) -- (4.5,1.4) -- (4.2,0.95) -- cycle; \draw[thick] (3.9,0.95) -- (4.5,0.95);
-\draw (4.2,0.95) -- (4.2,0.75); \draw[thick] (3.8,0.75) -- (4.6,0.75); \draw[thick] (3.95,0.6) -- (4.45,0.6);
-\draw (4.2,0.6) -- (4.2,0) -- (0,0) node[circle,draw,inner sep=1.5pt,fill=white] {};
-\node[right] at (4.7,0.35) {$5$ V};
-\draw[<->] (0,0.2)--(0,1.8); \node[left] at (-0.05,1.0) {$V_I$}; \node[left] at (-0.05,1.7) {$+$}; \node[left] at (-0.05,0.3) {$-$};
-\end{tikzpicture}
-
-    \caption{Diode circuit}
-    \label{fig:EC25-61}
-\end{center}
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Mutual_information.png}
+\caption{Joint PMF against the product of the marginals}
+\label{fig:c-mi}
 \end{figure}
 
-%--------------------------------------------------------------- Q62
-\item
-In the circuit shown below, the AND gate has a propagation delay of 1 ns. The edge-triggered flip-flops have a set-up time of 2 ns, a hold-time of 0 ns, and a clock-to-Q delay of 2 ns.
 
-The maximum clock frequency (in MHz, \textit{rounded off to the nearest integer}) such that there are no setup violations is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
+\item\label{p:diode}
+The diode in the circuit of \figref{fig:p61} is ideal. The input voltage (in Volts) is $V_I=10\sin(100\pi t)$, with $t$ in seconds. The time duration (in ms, two decimal places) for which the diode is forward biased during one period of the input is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
 \begin{figure}[H]
-\begin{center}
-\begin{tikzpicture}[>=Stealth, font=\small, ff/.style={draw,minimum width=1.3cm,minimum height=1.7cm}]
-\node[ff] (f1) at (0,0) {}; \node[ff] (f2) at (3,0) {};
-\foreach \f in {f1,f2} {\node[right] at ($(\f.west)+(0.02,0.45)$) {$D$}; \node[left] at ($(\f.east)+(-0.02,0.45)$) {$Q$}; \node[left] at ($(\f.east)+(-0.02,-0.45)$) {$\bar Q$};
- \draw ($(\f.south)+(-0.15,0)$)--($(\f.south)+(0,0.2)$)--($(\f.south)+(0.15,0)$);}
-\node[and gate US,draw,logic gate inputs=nn,anchor=input 1] (a) at (5.2,0.45) {};
-\draw ($(f1.east)+(0,0.45)$) -- ($(f2.west)+(0,0.45)$);
-\draw ($(f2.east)+(0,0.45)$) -- (a.input 1);
-\node (X) at (4.3,-0.6) {$X$}; \draw (X.east) -| (a.input 2);
-\draw (a.output) -- ++(0.5,0) |- (0,1.8) -| (-1.2,0.45) -- ($(f1.west)+(0,0.45)$);
-\draw (f1.south) -- ++(0,-0.7) coordinate (c1); \draw (f2.south) -- ++(0,-0.7) coordinate (c2);
-\draw (c1) -- (c2); \fill ($(c1)!0.5!(c2)$) circle(1.5pt) -- ++(0,-0.4) node[below] {$CLK$};
-\end{tikzpicture}
-
-    \caption{Flip-flops with AND gate}
-    \label{fig:EC25-62}
-\end{center}
+\centering
+\includegraphics[width=0.50\linewidth]{figs/fig-diode-circuit.png}
+\caption{Ideal diode circuit}
+\label{fig:p61}
 \end{figure}
 
-%--------------------------------------------------------------- Q65
-\item
-Two resistors are connected in a circuit loop of area $5\text{ m}^2$, as shown in the figure below. The circuit loop is placed on the $x$-$y$ plane.
 
-When a time-varying magnetic flux, with flux-density $B\brak{t} = 0.5t$ (in Tesla), is applied along the positive $z$-axis, the magnitude of current $I$ (in Amperes, \textit{rounded off to two decimal places}) in the loop is \underline{\hspace{1cm}}.
-\hfill (EC~2025)
+\solution
+From the figure the battery's negative plate faces the diode, so the cathode is at $-5$~V and the diode conducts when $V_I>-5$~V. With $\theta=100\pi t$:
+\begin{align}
+10\sin\theta&>-5\ \iff\ \sin\theta>-\frac12
+\\
+\Delta\theta&=\frac{7\pi}{6}-\brak{-\frac{\pi}{6}}=\frac{4\pi}{3}
+\\
+\Delta t&=\frac{\Delta\theta}{\omega}=\frac{4\pi/3}{100\pi}=\frac{1}{75}\ \mathrm s=13.33\ \mathrm{ms}\uses{eq:F-angletime}
+\end{align}
 \begin{figure}[H]
-\begin{center}
-\begin{circuitikz}[american, scale=1.0, transform shape]
-\fill[pattern=north west lines, pattern color=gray!60] (0,0) rectangle (3.4,2.4);
-\draw[thick] (0,0) -- (3.4,0) -- (3.4,0.45) to[R, l_=$2\,\Omega$] (3.4,1.65) -- (3.4,2.4);
-\draw[thick, -{Stealth}] (3.4,2.4) -- (1.9,2.4) node[above,pos=0.5] {$I$};
-\draw[thick] (1.9,2.4) -- (0,2.4) -- (0,1.65) to[R, l_=$2\,\Omega$] (0,0.45) -- (0,0);
-\draw[thick, -{Stealth}, bend left=40] (1.3,-0.8) to (1.0,0.15);
-\node at (0.7,-1.0) {\large Loop Area};
-% axes
-\draw[dashed,thick,-{Stealth}] (5.6,1.2)--(5.6,2.5) node[right] {$y$};
-\draw[dashed,thick,-{Stealth}] (5.6,1.2)--(7.2,1.2) node[right] {$x$};
-\draw[dashed,thick,-{Stealth}] (5.6,1.2)--(4.9,0.6) node[below left] {$z$};
-\end{circuitikz}
-
-    \caption{Circuit loop in a time-varying magnetic field}
-    \label{fig:EC25-65}
-\end{center}
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Diode_conduction.png}
+\caption{Conduction interval of the diode}
+\label{fig:c-diode}
 \end{figure}
-\end{enumerate}
 
 
-\end{document}
+\item\label{p:clock}
+In the circuit of \figref{fig:p62}, the AND gate has a propagation delay of 1~ns. The edge-triggered flip-flops have set-up time 2~ns, hold time 0~ns and clock-to-Q delay 2~ns. The maximum clock frequency (in MHz, nearest integer) with no setup violation is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\linewidth]{figs/fig-clock-circuit.png}
+\caption{Flip-flops with an AND gate in the data path}
+\label{fig:p62}
+\end{figure}
+
+
+\solution
+From the figure the longest path is FF$_2\to$ AND $\to$ FF$_1$:
+\begin{align}
+T_{\mathrm{clk,min}}&=t_{cq}+t_{AND}+t_{setup}=2+1+2=5\ \mathrm{ns}\uses{eq:F-setup}
+\\
+f_{\max}&=\frac{1}{5\ \mathrm{ns}}=200\ \mathrm{MHz}
+\end{align}
+
+
+\item\label{p:faraday}
+Two resistors are connected in a circuit loop of area $5\ \mathrm m^2$, as in \figref{fig:p65}. The loop lies in the $x$--$y$ plane. A time-varying magnetic flux density $B(t)=0.5t$ (in Tesla) is applied along the positive $z$-axis. The magnitude of the current $I$ (in Amperes, two decimal places) in the loop is \underline{\hspace{1.5cm}}. \hfill (EC~2025)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.60\linewidth]{figs/fig-faraday-loop.png}
+\caption{Circuit loop with two resistors}
+\label{fig:p65}
+\end{figure}
+
+
+\solution
+The two $2\ \Omega$ resistors in the loop are in series, so $R_{\mathrm{total}}=4\ \Omega$:
+\begin{align}
+\abs{\mathcal E}&=A\abs{\frac{dB}{dt}}=5\times0.5=2.5\ \mathrm V\uses{eq:F-faraday}
+\\
+I&=\frac{\abs{\mathcal E}}{R_{\mathrm{total}}}=\frac{2.5}{4}=0.625\ \mathrm A\approx0.63\ \mathrm A
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\linewidth]{figs/Faraday_loop.png}
+\caption{Flux, emf and current in the loop}
+\label{fig:c-far}
+\end{figure}
+
+\end{itemlist}
