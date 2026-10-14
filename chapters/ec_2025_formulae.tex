@@ -6,13 +6,13 @@
 \label{eq:F-rank-pivots}
 \end{align}
 
-\item ($p$-Series Test)
+\item $p$-Series Test
 \begin{align}
 \sum_{n=1}^{\infty} \frac{1}{n^{p}} \text{ converges} &\iff p > 1
 \label{eq:F-pseries}
 \end{align}
 
-\item (Telescoping Series)
+\item Telescoping Series
 \begin{align}
 \sum_{n=1}^{N} \frac{1}{n\brak{n+1}} &= \sum_{n=1}^{N} \brak{\frac{1}{n} - \frac{1}{n+1}}
 \\
@@ -29,7 +29,7 @@ e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!}
 \end{align}
 \solution Substituting $x = 1$ and removing the term $n = 0$ gives \eqref{eq:F-exp}.
 
-\item (Ratio Test) For a series $\sum a_n$,
+\item Ratio Test For a series $\sum a_n$,
 \begin{align}
 L &= \lim_{n \to \infty} \abs{\frac{a_{n+1}}{a_n}}
 \\
@@ -37,7 +37,7 @@ L < 1 &\implies \text{the series converges}
 \label{eq:F-ratio}
 \end{align}
 
-\item (Expectation)
+\item Expectation
 \begin{align}
 E\sbrak{X} &= \sum_{x} x \, \pr{X = x}
 \\
@@ -45,19 +45,19 @@ E\sbrak{X_1 + X_2} &= E\sbrak{X_1} + E\sbrak{X_2}
 \label{eq:F-expect}
 \end{align}
 
-\item (Marginal PMF)
+\item Marginal PMF
 \begin{align}
 \pr{X = x} &= \sum_{y} \pr{X = x, Y = y}
 \label{eq:F-marginal}
 \end{align}
 
-\item (Independent Random Variables) If $X$ and $Y$ are independent,
+\item Independent Random Variables If $X$ and $Y$ are independent,
 \begin{align}
 \pr{X = x, Y = y} &= \pr{X = x}\pr{Y = y}
 \label{eq:F-indep}
 \end{align}
 
-\item (PMF of a Sum of Independent Random Variables)
+\item PMF of a Sum of Independent Random Variables
 \begin{align}
 p_{X+Y}\sbrak{k} &= \sum_{i} p_X\sbrak{i}\, p_Y\sbrak{k - i}
 \label{eq:F-conv-pmf}
@@ -72,7 +72,7 @@ p_{X+Y}\sbrak{k} &= \sum_{i} p_X\sbrak{i}\, p_Y\sbrak{k - i}
 \end{align}
 upon using \eqref{eq:F-indep}.
 
-\item (Uncorrelated Random Variables) For independent, zero-mean, unit-variance $a_n$ and $a_m$, $n \ne m$,
+\item Uncorrelated Random Variables For independent, zero-mean, unit-variance $a_n$ and $a_m$, $n \ne m$,
 \begin{align}
 E\sbrak{a_n a_m} &= E\sbrak{a_n}E\sbrak{a_m} = 0
 \\
@@ -82,13 +82,13 @@ E\sbrak{a_n a_m} &= \delta_{n - m}
 \label{eq:F-uncorr}
 \end{align}
 
-\item (Gaussian Symmetry) The density of a zero-mean Gaussian random variable $N$ is symmetric, so
+\item Gaussian Symmetry The density of a zero-mean Gaussian random variable $N$ is symmetric, so
 \begin{align}
 \pr{N > c} &= \pr{N < -c}
 \label{eq:F-gauss-sym}
 \end{align}
 
-\item (Admittances)
+\item Admittances
 \begin{align}
 Y_R &= \frac{1}{R}
 \\
@@ -98,13 +98,13 @@ Y_C &= \jj \omega C
 \label{eq:F-admittance}
 \end{align}
 
-\item (Ohm's Law for Phasors)
+\item Ohm's Law for Phasors
 \begin{align}
 \underline{I} &= Y \underline{V}
 \label{eq:F-phasor-ohm}
 \end{align}
 
-\item (Polar Form of Phasors)
+\item Polar Form of Phasors
 \begin{align}
 \jj &= 1 \angle 90^\circ
 \\
@@ -114,7 +114,7 @@ Y_C &= \jj \omega C
 \label{eq:F-polar}
 \end{align}
 
-\item (Series $RLC$ Branch)
+\item Series $RLC$ Branch
 \begin{align}
 \abs{Z} &= \sqrt{R^2 + \brak{\omega L - \frac{1}{\omega C}}^2}
 \label{eq:F-series-rlc}
@@ -125,7 +125,7 @@ C &= \frac{1}{\omega^2 L}
 \label{eq:F-resonance}
 \end{align}
 
-\item ($Z$-Parameters of a Two-Port)
+\item $Z$-Parameters of a Two-Port
 \begin{align}
 \myvec{V_1 \\ V_2} &= \myvec{z_{11} & z_{12} \\ z_{21} & z_{22}} \myvec{I_1 \\ I_2}
 \label{eq:F-zdef}
@@ -136,13 +136,13 @@ z_{21} &= \frac{V_2}{I_1}\Big|_{I_2 = 0}
 \label{eq:F-zparam}
 \end{align}
 
-\item (Parallel Resistors)
+\item Parallel Resistors
 \begin{align}
 R_1 \parallel R_2 &= \frac{R_1 R_2}{R_1 + R_2}
 \label{eq:F-rnet}
 \end{align}
 
-\item (LTI Systems) For a system $y\sbrak{n} = T\cbrak{x\sbrak{n}}$,
+\item LTI Systems For a system $y\sbrak{n} = T\cbrak{x\sbrak{n}}$,
 \begin{align}
 \delta\sbrak{n} * h\sbrak{n} &= h\sbrak{n}
 \label{eq:F-conv}
@@ -157,13 +157,13 @@ T\cbrak{x\sbrak{n - k}} &= y\sbrak{n - k} \quad \text{(time invariant)}
 \label{eq:F-ti}
 \end{align}
 
-\item (Fourier Transform)
+\item Fourier Transform
 \begin{align}
 F\brak{\omega} &= \int_{-\infty}^{\infty} f\brak{t} e^{-\jj \omega t} \dd t
 \label{eq:F-ft}
 \end{align}
 
-\item (Magnitude Bound of the Fourier Transform)
+\item Magnitude Bound of the Fourier Transform
 \begin{align}
 \abs{F\brak{\omega}} &\le \int_{-\infty}^{\infty} \abs{f\brak{t}} \dd t
 \label{eq:F-ft-bound}
@@ -175,7 +175,7 @@ F\brak{\omega} &= \int_{-\infty}^{\infty} f\brak{t} e^{-\jj \omega t} \dd t
 &= \int_{-\infty}^{\infty} \abs{f\brak{t}} \dd t
 \end{align}
 
-\item (Transform of $e^{-\abs{t}}$)
+\item Transform of $e^{-\abs{t}}$
 \begin{align}
 e^{-\abs{t}} &\longleftrightarrow \frac{2}{1 + \omega^2}
 \label{eq:F-ft-pair}
@@ -189,7 +189,7 @@ e^{-\abs{t}} &\longleftrightarrow \frac{2}{1 + \omega^2}
 &= \frac{2}{1 + \omega^2}
 \end{align}
 
-\item (Fourier Series and Time Scaling) A periodic signal with fundamental period $T_0$ has
+\item Fourier Series and Time Scaling A periodic signal with fundamental period $T_0$ has
 \begin{align}
 f\brak{t} &= \sum_{k = -\infty}^{\infty} c_k e^{\jj 2\pi k t / T_0}
 \label{eq:F-fs}
@@ -210,7 +210,7 @@ y\brak{t + \frac{T_0}{\alpha}} &= f\brak{\alpha t + T_0}
 \end{align}
 yielding \eqref{eq:F-fs-period}.
 
-\item (Impulse Sampling) With $\omega_s = \frac{2\pi}{T_s}$,
+\item Impulse Sampling With $\omega_s = \frac{2\pi}{T_s}$,
 \begin{align}
 \sum_{n} \delta\brak{t - \tau - n T_s} &= \frac{1}{T_s} \sum_{k} e^{\jj k \omega_s \brak{t - \tau}}
 \label{eq:F-comb-fs}
@@ -226,7 +226,7 @@ y\brak{t} &= \frac{1}{T_s} \sum_{k} e^{-\jj k \omega_s \tau} f\brak{t} e^{\jj k 
 Y\brak{\omega} &= \frac{1}{T_s} \sum_{k} e^{-\jj k \omega_s \tau} F\brak{\omega - k \omega_s}
 \end{align}
 
-\item (Ideal Lowpass Reconstruction)
+\item Ideal Lowpass Reconstruction
 \begin{align}
 H\brak{\omega} &= T_s, \quad \abs{\omega} < \omega_c
 \label{eq:F-lpf}
@@ -235,7 +235,7 @@ H\brak{\omega} &= T_s, \quad \abs{\omega} < \omega_c
 \label{eq:F-nyquist}
 \end{align}
 
-\item ($z$-Transform and DTFT)
+\item $z$-Transform and DTFT
 \begin{align}
 X\brak{z} &= \sum_{n} x\sbrak{n} z^{-n}
 \\
@@ -244,25 +244,25 @@ X\brak{e^{\jj \omega}} &= \sum_{n} x\sbrak{n} e^{-\jj \omega n}
 \end{align}
 The DTFT exists if the region of convergence (ROC) contains the unit circle. The ROC contains no poles but may contain zeros. For $x\sbrak{n} = \alpha \delta\sbrak{n}$, $X\brak{z} = \alpha$ with the ROC the entire $z$-plane.
 
-\item (Characteristic Equation of a Unity-Feedback Loop)
+\item Characteristic Equation of a Unity-Feedback Loop
 \begin{align}
 1 + L\brak{s} &= 0
 \label{eq:F-char}
 \end{align}
 
-\item (Stability of a Quadratic Polynomial)
+\item Stability of a Quadratic Polynomial
 \begin{align}
 a_2 s^2 + a_1 s + a_0 \text{ is stable} &\iff a_2, a_1, a_0 \text{ have the same sign}
 \label{eq:F-hurwitz2}
 \end{align}
 
-\item (Roots of $s^3 + c$) For $c > 0$ and $k = 0, 1, 2$,
+\item Roots of $s^3 + c$ For $c > 0$ and $k = 0, 1, 2$,
 \begin{align}
 s^3 + c = 0 &\implies s = c^{1/3} e^{\jj \brak{\pi + 2\pi k}/3}
 \label{eq:F-cubic-roots}
 \end{align}
 
-\item (Root Locus) A point $s_0$ lies on the root locus of $1 + K G\brak{s} = 0$ for some $K \ge 0$ iff
+\item Root Locus A point $s_0$ lies on the root locus of $1 + K G\brak{s} = 0$ for some $K \ge 0$ iff
 \begin{align}
 G\brak{s_0} &= -\frac{1}{K}
 \label{eq:F-rootlocus}
@@ -275,7 +275,7 @@ G\brak{s_0} &= -\frac{1}{K}
 K &= \frac{1}{\abs{G\brak{s_0}}}
 \end{align}
 
-\item (Mason's Gain Formula)
+\item Mason's Gain Formula
 \begin{align}
 T &= \frac{\sum_{k} P_k \Delta_k}{\Delta}
 \label{eq:F-mason}
@@ -284,7 +284,7 @@ T &= \frac{\sum_{k} P_k \Delta_k}{\Delta}
 \end{align}
 where $P_k$ are the forward-path gains, $L_i$ the loop gains and $\Delta_k$ is $\Delta$ with the loops touching path $k$ removed.
 
-\item (State Equation) For $\dot{x}_i = \lambda_i x_i + b_i u$,
+\item State Equation For $\dot{x}_i = \lambda_i x_i + b_i u$,
 \begin{align}
 x_i\brak{t} &= e^{\lambda_i t} x_i\brak{0} + b_i \int_{0}^{t} e^{\lambda_i \brak{t - \sigma}} u\brak{\sigma} \dd \sigma
 \label{eq:F-state}
@@ -308,13 +308,13 @@ x_i\brak{t} &= b_i \int_{0}^{t} e^{\lambda_i \brak{t - \sigma}} \dd \sigma
 \end{align}
 which grows without bound for $\lambda_i \ge 0$ and $b_i \ne 0$.
 
-\item (Majority Function)
+\item Majority Function
 \begin{align}
 Y_{\mathrm{maj}} &= AB + AC + BC
 \label{eq:F-maj}
 \end{align}
 
-\item (XOR with a Constant)
+\item XOR with a Constant
 \begin{align}
 Y \oplus 0 &= Y
 \\
@@ -322,7 +322,7 @@ Y \oplus 1 &= \overline{Y}
 \label{eq:F-xor}
 \end{align}
 
-\item (Two's Complement Subtraction)
+\item Two's Complement Subtraction
 \begin{align}
 X + \overline{Y} + 1 &\equiv X - Y \pmod{2^n}
 \label{eq:F-twos}
@@ -347,7 +347,7 @@ f_{\max} &= \frac{1}{T_{\mathrm{clk,min}}}
 \label{eq:F-setup}
 \end{align}
 
-\item (Frequency Modulation)
+\item Frequency Modulation
 \begin{align}
 f_i\brak{t} &= \frac{1}{2\pi} \frac{d\phi\brak{t}}{dt}
 \\
@@ -355,7 +355,7 @@ f_i\brak{t} &= \frac{1}{2\pi} \frac{d\phi\brak{t}}{dt}
 \label{eq:F-fm}
 \end{align}
 
-\item (Envelope Detection)
+\item Envelope Detection
 \begin{align}
 \text{envelope (DSB-SC)} &= A_c \abs{m\brak{t}}
 \\
@@ -363,13 +363,13 @@ f_i\brak{t} &= \frac{1}{2\pi} \frac{d\phi\brak{t}}{dt}
 \label{eq:F-envelope}
 \end{align}
 
-\item (Maximum-Likelihood Detection) For equal priors and equal-variance Gaussian noise, the detector chooses the nearest symbol
+\item Maximum-Likelihood Detection For equal priors and equal-variance Gaussian noise, the detector chooses the nearest symbol
 \begin{align}
 \hat{S} &= \arg\min_{s} \abs{y - s}
 \label{eq:F-ml}
 \end{align}
 
-\item (Ideal ADC)
+\item Ideal ADC
 \begin{align}
 \mathrm{SNR}_{\max} &= 6.02 N + 1.76 \text{ dB}
 \\
@@ -377,7 +377,7 @@ R_b &= f_s N
 \label{eq:F-adc}
 \end{align}
 
-\item (Inverting Op-Amp Filter)
+\item Inverting Op-Amp Filter
 \begin{align}
 H\brak{s} &= -\frac{Z_f\brak{s}}{Z_i\brak{s}}
 \label{eq:F-inv}
@@ -388,13 +388,13 @@ A factor $\frac{1}{1 + sRC}$ gives a corner frequency
 \label{eq:F-corner}
 \end{align}
 
-\item (Entropy)
+\item Entropy
 \begin{align}
 H\brak{X} &= -\sum_{x} p\brak{x} \log_2 p\brak{x}
 \label{eq:F-entropy}
 \end{align}
 
-\item (Mutual Information)
+\item Mutual Information
 \begin{align}
 I\brak{X;Y} &= \sum_{x,y} p\brak{x,y} \log_2 \frac{p\brak{x,y}}{p\brak{x}p\brak{y}}
 \label{eq:F-mi}
@@ -409,13 +409,13 @@ I\brak{X;Y} &= \sum_{x,y} p\brak{x,y} \log_2 1
 &= 0
 \end{align}
 
-\item (Minimum Distance of a Binary Linear Code) With $w$ the Hamming weight,
+\item Minimum Distance of a Binary Linear Code With $w$ the Hamming weight,
 \begin{align}
 d_{\min} &= \min_{\vec{c} \ne \vec{0}} w\brak{\vec{c}}
 \label{eq:F-dmin}
 \end{align}
 
-\item (Faraday's Law)
+\item Faraday's Law
 \begin{align}
 \abs{\mathcal{E}} &= \abs{\frac{d\Phi_B}{dt}} = A \abs{\frac{dB}{dt}}
 \\
@@ -423,7 +423,7 @@ I &= \frac{\abs{\mathcal{E}}}{R_{\mathrm{total}}}
 \label{eq:F-faraday}
 \end{align}
 
-\item (Current Density)
+\item Current Density
 \begin{align}
 J &= \sigma E
 \\
@@ -431,19 +431,19 @@ I &= J A
 \label{eq:F-J}
 \end{align}
 
-\item (Surface Charge)
+\item Surface Charge
 \begin{align}
 Q &= \iint \rho_s \dd A
 \label{eq:F-charge}
 \end{align}
 
-\item (Ideal Diode and Phase-to-Time Conversion) An ideal diode is forward biased iff the anode voltage exceeds the cathode voltage. A phase interval $\Delta \theta$ at angular frequency $\omega$ lasts
+\item Ideal Diode and Phase-to-Time Conversion An ideal diode is forward biased iff the anode voltage exceeds the cathode voltage. A phase interval $\Delta \theta$ at angular frequency $\omega$ lasts
 \begin{align}
 \Delta t &= \frac{\Delta \theta}{\omega}
 \label{eq:F-angletime}
 \end{align}
 
-\item (Second Derivative Test)
+\item Second Derivative Test
 \begin{align}
 f'\brak{x_0} = 0, f''\brak{x_0} > 0 &\implies \text{local minimum}
 \label{eq:F-second}
@@ -451,13 +451,13 @@ f'\brak{x_0} = 0, f''\brak{x_0} > 0 &\implies \text{local minimum}
 f'\brak{x_0} = 0, f''\brak{x_0} < 0 &\implies \text{local maximum}
 \end{align}
 
-\item (Bounds on an Integral)
+\item Bounds on an Integral
 \begin{align}
 m \le f\brak{x} \le M \text{ on } \sbrak{a, b} &\implies m\brak{b - a} \le \int_{a}^{b} f\brak{x} \dd x \le M\brak{b - a}
 \label{eq:F-intbound}
 \end{align}
 
-\item (Euler--Cauchy Equation) For $t^2 y'' + a t y' + b y = 0$ with $y = t^m$,
+\item Euler--Cauchy Equation For $t^2 y'' + a t y' + b y = 0$ with $y = t^m$,
 \begin{align}
 m\brak{m - 1} + a m + b &= 0
 \label{eq:F-euler-cauchy}
@@ -470,7 +470,7 @@ t^2 y'' + a t y' + b y &= t^m \sbrak{m\brak{m - 1} + a m + b}
 \end{align}
 yielding \eqref{eq:F-euler-cauchy}.
 
-\item (Least Squares) The scalar $x$ minimizing $\norm{x\vec{a} - \vec{b}}$ is
+\item Least Squares The scalar $x$ minimizing $\norm{x\vec{a} - \vec{b}}$ is
 \begin{align}
 x^* &= \frac{\vec{a}^\top \vec{b}}{\vec{a}^\top \vec{a}}
 \label{eq:F-ls}
@@ -484,13 +484,13 @@ J\brak{x} &= x^2 \vec{a}^\top \vec{a} - 2x \vec{a}^\top \vec{b} + \vec{b}^\top \
 x^* &= \frac{\vec{a}^\top \vec{b}}{\vec{a}^\top \vec{a}}
 \end{align}
 
-\item (Cauchy's Theorem) For a closed counter-clockwise contour $C$,
+\item Cauchy's Theorem For a closed counter-clockwise contour $C$,
 \begin{align}
 \oint_{C} f\brak{z} \dd z &= 0 \quad \text{if } f \text{ is analytic inside and on } C
 \label{eq:F-cauchy}
 \end{align}
 
-\item (Integral of $z^n$ on the Unit Circle)
+\item Integral of $z^n$ on the Unit Circle
 \begin{align}
 \oint_{\abs{z} = 1} z^n \dd z &= \begin{cases} 2\pi \jj, & n = -1 \\ 0, & n \ne -1 \end{cases}
 \label{eq:F-zn}
@@ -502,7 +502,7 @@ x^* &= \frac{\vec{a}^\top \vec{b}}{\vec{a}^\top \vec{a}}
 &= \begin{cases} 2\pi \jj, & n = -1 \\ 0, & n \ne -1 \end{cases}
 \end{align}
 
-\item (Poles of $\sec z$) The poles of $\sec z = \frac{1}{\cos z}$ are where $\cos z = 0$:
+\item Poles of $\sec z$ The poles of $\sec z = \frac{1}{\cos z}$ are where $\cos z = 0$:
 \begin{align}
 z &= \frac{\pi}{2} + k\pi, \quad k \in \mathbb{Z}
 \label{eq:F-sec}
