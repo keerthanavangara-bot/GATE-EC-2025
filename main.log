@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.9)  15 OCT 2026 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.9)  15 OCT 2026 04:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1344,55 +1344,34 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 25.
-
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen399
-\lightrulewidth=\dimen400
-\cmidrulewidth=\dimen401
-\belowrulesep=\dimen402
-\belowbottomsep=\dimen403
-\aboverulesep=\dimen404
-\abovetopsep=\dimen405
-\cmidrulesep=\dimen406
-\cmidrulekern=\dimen407
-\defaultaddspace=\dimen408
-\@cmidla=\count406
-\@cmidlb=\count407
-\@aboverulesep=\dimen409
-\@belowrulesep=\dimen410
-\@thisruleclass=\count408
-\@lastruleclass=\count409
-\@thisrulewidth=\dimen411
-)
 \@indexfile=\write4
 \openout4 = `main.idx'.
 
 
 Writing index file main.idx
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 40.
+h' as default language. on input line 29.
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 -- Lines per column: 45 (approximate, difference = 0.60239pt).
 *geometry* driver: auto-detecting
@@ -1429,14 +1408,14 @@ LaTeX Font Info:    ... okay on input line 40.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 40.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 40.
+LaTeX Info: Redefining \celsius on input line 29.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 29.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 40.
-Package gensymb Info: Using \Omega for \ohm on input line 40.
+LaTeX Info: Redefining \ohm on input line 29.
+Package gensymb Info: Using \Omega for \ohm on input line 29.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1447,20 +1426,20 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 40.
+or `english'. on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count410
-\scratchdimen=\dimen412
+\scratchcounter=\count406
+\scratchdimen=\dimen399
 \scratchbox=\box142
-\nofMPsegments=\count411
-\nofMParguments=\count412
+\nofMPsegments=\count407
+\nofMParguments=\count408
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count413
-\MPscratchDim=\dimen413
-\MPnumerator=\count414
-\makeMPintoPDFobject=\count415
+\MPscratchCnt=\count409
+\MPscratchDim=\dimen400
+\MPnumerator=\count410
+\makeMPintoPDFobject=\count411
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1471,137 +1450,315 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 40.
+Package hyperref Info: Link coloring ON on input line 29.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count416
+\c@lstlisting=\count412
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+<figs/logo.jpg, id=39, 2537.48pt x 2047.65pt>
+File: figs/logo.jpg Graphic file (type jpg)
+<use figs/logo.jpg>
+Package pdftex.def Info: figs/logo.jpg  used on input line 56.
+(pdftex.def)             Requested size: 72.83794pt x 58.77106pt.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/base/8r.enc}
 
 
-LaTeX Warning: File `figs/logo.jpg' not found on input line 67.
+ <./figs/logo.jpg>]
+[2] (./main.toc)
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [3] (./chapters/ec_2025_formulae.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
 
 
-! Package pdftex.def Error: File `figs/logo.jpg' not found: using draft setting
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+LaTeX Warning: Reference `eq:F-exp' on page 4 undefined on input line 27.
+
+[4
+
+]
+
+LaTeX Warning: Reference `eq:F-indep' on page 5 undefined on input line 65.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 88.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 88.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 88.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 88.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+[5]
+
+LaTeX Warning: Command \j invalid in math mode on input line 146.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 146.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 152.
+
+
+LaTeX Warning: Reference `eq:F-ft' on page 6 undefined on input line 152.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 157.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 157.
+
+
+LaTeX Warning: Reference `eq:F-ft' on page 6 undefined on input line 163.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 170.
+
+[6]
+
+LaTeX Warning: Command \j invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 183.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 183.
+
+
+LaTeX Warning: Reference `eq:F-fs' on page 7 undefined on input line 184.
+
+
+LaTeX Warning: Reference `eq:F-fs-scale' on page 7 undefined on input line 184.
+
+
+
+LaTeX Warning: Reference `eq:F-fs-period' on page 7 undefined on input line 190
 .
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 198.
+
+
+LaTeX Warning: Reference `eq:F-comb-fs' on page 7 undefined on input line 200.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 200.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 205.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 205.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 205.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 205.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 205.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 205.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 220.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 220.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 220.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 220.
+
+[7]
+
+LaTeX Warning: Command \j invalid in math mode on input line 236.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 236.
+
+[8]
+
+LaTeX Warning: Reference `eq:F-state' on page 9 undefined on input line 271.
+
+[9]
+
+LaTeX Warning: Reference `eq:F-indep' on page 10 undefined on input line 364.
+
+
+LaTeX Warning: Reference `eq:F-mi' on page 10 undefined on input line 364.
+
+[10]
+
+LaTeX Warning: Reference `eq:F-euler-cauchy' on page 11 undefined on input line
+ 423.
+
+[11]
+
+LaTeX Warning: Command \j invalid in math mode on input line 447.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 447.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 448.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 448.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 448.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 453.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 453.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 453.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 453.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 453.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 453.
+
+) (./chapters/ec_2025.tex
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \end{align}
+               
+
+LaTeX Warning: Reference `eq:F-rank-pivots' on page 12 undefined on input line 
+26.
+
+[12]
+
+LaTeX Warning: Reference `fig:c-rank' on page 13 undefined on input line 54.
+
+
+LaTeX Warning: File `figs/Rank_of_matrix.png' not found on input line 60.
+
+
+! Package pdftex.def Error: File `figs/Rank_of_matrix.png' not found: using dra
+ft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 
-     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+l.60 ...h=0.75\linewidth]{figs/Rank_of_matrix.png}
+                                                  
+? r
+OK, entering \nonstopmode...
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
-7.
+0.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texm
-f-dist/fonts/enc/dvips/base/8r.enc}
-
-
-] [2] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
- [3]
-(./chapters/ec_2025_formulae.tex
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-              
-L/cmm/m/it/10 i$ \OT1/ptm/m/n/10 of the dis-joint events
- []
-
-[5] [6] [7] [8] [9] [10] [11]) (./chapters/ec_2025.tex
-
-! LaTeX Error: Environment itemlist undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \begin{itemlist}
-                    
-? 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \item\label
-               {p:rank}
-? 
-! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
-l.2 \item\label
-               {p:rank}
-? 
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) [13]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 \end{align}
-                
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 \end{align}
-                 [12]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 \item\label
-                {p:series}
-? 
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.77 \end{align}
-                
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.77 \end{align}
+l.70 \end{align}
                 
 
-LaTeX Warning: File `figs/Series_convergence.png' not found on input line 80.
+LaTeX Warning: Reference `eq:F-pseries' on page 14 undefined on input line 82.
+
+
+LaTeX Warning: Reference `eq:F-telescope' on page 14 undefined on input line 90
+.
+
+[14]
+
+LaTeX Warning: Reference `eq:F-ratio' on page 15 undefined on input line 96.
+
+
+LaTeX Warning: Reference `eq:F-exp' on page 15 undefined on input line 104.
+
+
+LaTeX Warning: Reference `fig:c-series' on page 15 undefined on input line 109.
+
+
+
+LaTeX Warning: File `figs/Series_convergence.png' not found on input line 115.
 
 
 ! Package pdftex.def Error: File `figs/Series_convergence.png' not found: using
@@ -1611,196 +1768,86 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 ...00\linewidth]{figs/Series_convergence.png}
-                                                  
-? r
-OK, entering \nonstopmode...
-[13
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.84 
-     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.84 
-     ]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 \item\label
-                {p:balls}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.103 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.103 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.103 \end{align}
-                  [14]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.7}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.8}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \end{align}
-                 
-Runaway argument?
- 
-! Paragraph ended before \align was complete.
-<to be read again> 
-                   \par 
-l.130 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.130 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.130 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \tex_par:D 
-l.130 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.132 \item\label
-                 {p:fm}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.9}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.136 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.157 \end{align}
-                 
-
-LaTeX Warning: File `figs/FM_deviation.png' not found on input line 160.
-
-
-! Package pdftex.def Error: File `figs/FM_deviation.png' not found: using draft
- setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.160 ...th=1.00\linewidth]{figs/FM_deviation.png}
+l.115 ...5\linewidth]{figs/Series_convergence.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [15]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.134 \end{align}
+                 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+LaTeX Warning: Reference `eq:F-conv-pmf' on page 16 undefined on input line 135
+.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 \end{align}
+                 
+
+LaTeX Warning: Reference `eq:F-conv-pmf' on page 16 undefined on input line 143
+.
+
+[16]
+
+LaTeX Warning: Reference `eq:F-indep' on page 17 undefined on input line 151.
+
+
+LaTeX Warning: Reference `fig:c-balls' on page 17 undefined on input line 161.
+
+
+LaTeX Warning: File `figs/Different_colours.png' not found on input line 167.
+
+
+! Package pdftex.def Error: File `figs/Different_colours.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166 \item\label
-                 {p:lti}
+l.167 ...75\linewidth]{figs/Different_colours.png}
+                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[17]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.175 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.190 \end{align}
+                 
 
-LaTeX Warning: File `figs/fig-lti-system.png' not found on input line 176.
+LaTeX Warning: Reference `eq:F-fm' on page 18 undefined on input line 191.
+
+[18]
+
+LaTeX Warning: Reference `fig:c-fm' on page 19 undefined on input line 205.
+
+<figs/FM_deviation.png, id=371, 505.4885pt x 311.564pt>
+File: figs/FM_deviation.png Graphic file (type png)
+<use figs/FM_deviation.png>
+Package pdftex.def Info: figs/FM_deviation.png  used on input line 211.
+(pdftex.def)             Requested size: 273.14647pt x 168.36089pt.
+
+LaTeX Warning: Reference `fig:p5' on page 19 undefined on input line 216.
+
+
+LaTeX Warning: File `figs/fig-lti-system.png' not found on input line 228.
 
 
 ! Package pdftex.def Error: File `figs/fig-lti-system.png' not found: using dra
@@ -1810,38 +1857,42 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.176 ...=0.85\linewidth]{figs/fig-lti-system.png}
+l.228 ...=0.75\linewidth]{figs/fig-lti-system.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[16]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+[19 <./figs/FM_deviation.png>]
+
+LaTeX Warning: Reference `fig:p5' on page 20 undefined on input line 233.
+
+
+LaTeX Warning: Reference `eq:F-conv' on page 20 undefined on input line 233.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 \end{align}
+l.238 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.2}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.194 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.194 \end{align}
+l.238 \end{align}
                  
 
-LaTeX Warning: File `figs/LTI_system.png' not found on input line 198.
+LaTeX Warning: Reference `eq:F-zero' on page 20 undefined on input line 243.
+
+
+LaTeX Warning: Reference `eq:F-ti' on page 20 undefined on input line 249.
+
+
+LaTeX Warning: Reference `fig:c-lti' on page 20 undefined on input line 250.
+
+
+LaTeX Warning: File `figs/LTI_system.png' not found on input line 256.
 
 
 ! Package pdftex.def Error: File `figs/LTI_system.png' not found: using draft s
@@ -1851,74 +1902,56 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198 ...idth=1.00\linewidth]{figs/LTI_system.png}
+l.256 ...idth=0.75\linewidth]{figs/LTI_system.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[17]
+[20]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.204 \item\label
-                 {p:ftbound}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Command \j invalid in math mode on input line 261.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.218 \end{align}
-                  [18]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.224 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.224 \end{align}
+l.275 \end{align}
                  
 
-LaTeX Warning: File `figs/Fourier_bound.png' not found on input line 227.
+LaTeX Warning: Reference `eq:F-ft-pair' on page 21 undefined on input line 276.
 
 
-! Package pdftex.def Error: File `figs/Fourier_bound.png' not found: using draf
-t setting.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.227 ...h=1.00\linewidth]{figs/Fourier_bound.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.281 \end{align}
+                  [21]
 
-[19]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.233 \item\label
-                 {p:acpar}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-ft-bound' on page 22 undefined on input line 288
+.
 
 
-LaTeX Warning: File `figs/fig-ac-parallel.png' not found on input line 243.
+LaTeX Warning: Command \j invalid in math mode on input line 293.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 293.
+
+
+LaTeX Warning: Reference `fig:c-ftb' on page 22 undefined on input line 295.
+
+<figs/Fourier_bound.png, id=410, 505.4885pt x 311.1625pt>
+File: figs/Fourier_bound.png Graphic file (type png)
+<use figs/Fourier_bound.png>
+Package pdftex.def Info: figs/Fourier_bound.png  used on input line 301.
+(pdftex.def)             Requested size: 273.14647pt x 168.14394pt.
+
+LaTeX Warning: Reference `fig:p7' on page 22 undefined on input line 306.
+
+
+LaTeX Warning: File `figs/fig-ac-parallel.png' not found on input line 318.
 
 
 ! Package pdftex.def Error: File `figs/fig-ac-parallel.png' not found: using dr
@@ -1928,75 +1961,76 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 ...0.55\linewidth]{figs/fig-ac-parallel.png}
+l.318 ...0.55\linewidth]{figs/fig-ac-parallel.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[20]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+[22 <./figs/Fourier_bound.png>]
+
+LaTeX Warning: Reference `fig:p7' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Reference `eq:F-phasor-ohm' on page 23 undefined on input line 3
+23.
+
+
+LaTeX Warning: Reference `eq:F-polar' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 336.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 336.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 336.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.257 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.257 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.257 \end{align}
+l.336 \end{align}
                  
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+LaTeX Warning: Command \j invalid in math mode on input line 336.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+LaTeX Warning: Reference `fig:c-ac' on page 23 undefined on input line 337.
+
+
+LaTeX Warning: File `figs/AC_admittance.png' not found on input line 343.
+
+
+! Package pdftex.def Error: File `figs/AC_admittance.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.260 \item\label
-                 {p:majority}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.277 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.277 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.277 \end{align}
-                  [21]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+l.343 ...h=0.75\linewidth]{figs/AC_admittance.png}
                                                   
-l.297 \item\label
-                 {p:adder}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[23]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.366 \end{align}
+                 
 
-LaTeX Warning: File `figs/fig-adder-xor.png' not found on input line 307.
+LaTeX Warning: Reference `eq:F-maj' on page 24 undefined on input line 367.
+
+[24]
+
+LaTeX Warning: Reference `fig:p9' on page 25 undefined on input line 389.
+
+
+LaTeX Warning: File `figs/fig-adder-xor.png' not found on input line 401.
 
 
 ! Package pdftex.def Error: File `figs/fig-adder-xor.png' not found: using draf
@@ -2006,110 +2040,105 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ...h=0.25\linewidth]{figs/fig-adder-xor.png}
+l.401 ...h=0.25\linewidth]{figs/fig-adder-xor.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.321 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.321 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.321 \end{align}
-                 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325 \item\label
-                 {p:cubic}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:p9' on page 25 undefined on input line 406.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.344 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.344 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.344 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.344 \end{align}
-                  [22]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.350 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.350 \end{align}
-                 
-
-LaTeX Warning: File `figs/Cubic_extrema.png' not found on input line 354.
+LaTeX Warning: Reference `eq:F-xor' on page 25 undefined on input line 406.
 
 
-! Package pdftex.def Error: File `figs/Cubic_extrema.png' not found: using draf
-t setting.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.9.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.409 \end{align}
+                 
+
+LaTeX Warning: Reference `eq:F-twos' on page 25 undefined on input line 410.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.9.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.415 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.9.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.415 \end{align}
+                 
+
+LaTeX Warning: Reference `fig:c-adder' on page 25 undefined on input line 417.
+
+
+LaTeX Warning: File `figs/Full_adder_subtractor.png' not found on input line 42
+3.
+
+
+! Package pdftex.def Error: File `figs/Full_adder_subtractor.png' not found: us
+ing draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.354 ...h=1.00\linewidth]{figs/Cubic_extrema.png}
+l.423 ...inewidth]{figs/Full_adder_subtractor.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[23]
+[25]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.445 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.445 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.445 \end{align}
+                 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+LaTeX Warning: Reference `eq:F-second' on page 26 undefined on input line 446.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 \item\label
-                 {p:rootlocus}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[26]
+
+LaTeX Warning: Reference `fig:c-cubic' on page 27 undefined on input line 463.
+
+<figs/Cubic_function.png, id=482, 504.284pt x 338.063pt>
+File: figs/Cubic_function.png Graphic file (type png)
+<use figs/Cubic_function.png>
+Package pdftex.def Info: figs/Cubic_function.png  used on input line 469.
+(pdftex.def)             Requested size: 273.14647pt x 183.1084pt.
+
+LaTeX Warning: Reference `fig:p11a' on page 27 undefined on input line 474.
 
 
-LaTeX Warning: File `figs/fig-rootlocus-loop.png' not found on input line 370.
+LaTeX Warning: Reference `fig:p11b' on page 27 undefined on input line 474.
+
+
+LaTeX Warning: Reference `fig:p11a' on page 27 undefined on input line 474.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 474.
+
+
+LaTeX Warning: File `figs/fig-rootlocus-loop.png' not found on input line 486.
 
 
 ! Package pdftex.def Error: File `figs/fig-rootlocus-loop.png' not found: using
@@ -2119,14 +2148,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.370 ...5\linewidth]{figs/fig-rootlocus-loop.png}
+l.486 ...5\linewidth]{figs/fig-rootlocus-loop.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[24]
 
-LaTeX Warning: File `figs/fig-rootlocus-plot.png' not found on input line 377.
+LaTeX Warning: File `figs/fig-rootlocus-plot.png' not found on input line 492.
 
 
 ! Package pdftex.def Error: File `figs/fig-rootlocus-plot.png' not found: using
@@ -2136,38 +2164,76 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.377 ...0\linewidth]{figs/fig-rootlocus-plot.png}
+l.492 ...0\linewidth]{figs/fig-rootlocus-plot.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[25]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+[27 <./figs/Cubic_function.png>] [28]
+
+LaTeX Warning: Reference `fig:p11b' on page 29 undefined on input line 497.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.391 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.391 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.391 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.395 \end{align}
+l.500 \end{align}
                  
 
-LaTeX Warning: File `figs/Root_locus.png' not found on input line 399.
+LaTeX Warning: Reference `eq:F-rootlocus' on page 29 undefined on input line 50
+1.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 501.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 508.
+
+
+LaTeX Warning: Reference `fig:c-rl' on page 29 undefined on input line 510.
+
+
+LaTeX Warning: File `figs/Root_locus.png' not found on input line 516.
 
 
 ! Package pdftex.def Error: File `figs/Root_locus.png' not found: using draft s
@@ -2177,223 +2243,153 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.399 ...idth=1.00\linewidth]{figs/Root_locus.png}
+l.516 ...idth=0.75\linewidth]{figs/Root_locus.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[26]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.405 \item\label
-                 {p:ztrans}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Command \j invalid in math mode on input line 517.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
-[]\OT1/ptm/m/n/10 The discrete-time Fourier trans-form
- []
+LaTeX Warning: Command \j invalid in math mode on input line 517.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+[29]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 \end{align}
+l.537 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 \end{align}
-                  [27]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.426 \end{align}
+l.537 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.3
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.426 \end{align}
+l.537 \end{align}
                  
 
-LaTeX Warning: File `figs/ZTransform_roc.png' not found on input line 430.
-
-
-! Package pdftex.def Error: File `figs/ZTransform_roc.png' not found: using dra
-ft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.430 ...=1.00\linewidth]{figs/ZTransform_roc.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[28]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.436 \item\label
-                 {p:envelope}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.442 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.442 \end{align}
-                  [29]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.460 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.464 \end{align}
-                 
-
-LaTeX Warning: File `figs/Envelope_detector.png' not found on input line 468.
-
-
-! Package pdftex.def Error: File `figs/Envelope_detector.png' not found: using 
-draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.468 ...00\linewidth]{figs/Envelope_detector.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-ztrans' on page 30 undefined on input line 538.
 
 [30]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.474 \item\label
-                 {p:eulercauchy}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:c-z' on page 31 undefined on input line 545.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.485 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.485 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.485 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.493 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.7}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.493 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.8}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.493 \end{align}
-                  [31]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.9}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.499 \end{align}
-                 
-
-LaTeX Warning: File `figs/Euler_Cauchy.png' not found on input line 502.
+LaTeX Warning: File `figs/Z_transform_ROC.png' not found on input line 551.
 
 
-! Package pdftex.def Error: File `figs/Euler_Cauchy.png' not found: using draft
- setting.
+! Package pdftex.def Error: File `figs/Z_transform_ROC.png' not found: using dr
+aft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.502 ...th=1.00\linewidth]{figs/Euler_Cauchy.png}
+l.551 ...0.75\linewidth]{figs/Z_transform_ROC.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.561 \end{align}
+                  [31]
 
-See the LaTeX manual or LaTeX Companion for explanation.
+LaTeX Warning: Reference `eq:F-envelope' on page 32 undefined on input line 579
+.
+
+
+LaTeX Warning: Reference `fig:c-env' on page 32 undefined on input line 590.
+
+<figs/Envelope_detection.png, id=535, 563.3045pt x 393.8715pt>
+File: figs/Envelope_detection.png Graphic file (type png)
+<use figs/Envelope_detection.png>
+Package pdftex.def Info: figs/Envelope_detection.png  used on input line 596.
+(pdftex.def)             Requested size: 273.14647pt x 190.99138pt.
+
+LaTeX Warning: Reference `eq:F-euler-cauchy' on page 32 undefined on input line
+ 605.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.14.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.614 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.14.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.614 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.14.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.614 \end{align}
+                  [32 <./figs/Envelope_detection.png>]
+
+LaTeX Warning: Reference `eq:F-second' on page 33 undefined on input line 625.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.15.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.639 \end{align}
+                 
+
+LaTeX Warning: Reference `eq:F-dmin' on page 33 undefined on input line 660.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.15.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.665 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.15.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.665 \end{align}
+                 
+
+LaTeX Warning: Reference `fig:c-code' on page 33 undefined on input line 666.
+
+[33]
+
+LaTeX Warning: File `figs/Minimum_hamming_distance.png' not found on input line
+ 672.
+
+
+! Package pdftex.def Error: File `figs/Minimum_hamming_distance.png' not found:
+ using draft setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.508 \item\label
-                 {p:code}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[32]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+l.672 ...width]{figs/Minimum_hamming_distance.png}
                                                   
-l.538 \item\label
-                 {p:bpf}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `figs/fig-bandpass-filter.png' not found on input line 542.
+LaTeX Warning: Reference `fig:p16' on page 34 undefined on input line 677.
+
+
+LaTeX Warning: File `figs/fig-bandpass-filter.png' not found on input line 681.
 
 
 
@@ -2404,44 +2400,66 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.542 ...\linewidth]{figs/fig-bandpass-filter.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[33]
-
-LaTeX Warning: File `figs/Bandpass_filter.png' not found on input line 570.
-
-
-! Package pdftex.def Error: File `figs/Bandpass_filter.png' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.570 ...1.00\linewidth]{figs/Bandpass_filter.png}
+l.681 ...\linewidth]{figs/fig-bandpass-filter.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [34]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+LaTeX Warning: Reference `fig:p16' on page 35 undefined on input line 686.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.576 \item\label
-                 {p:controller}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.16.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.693 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.16.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.693 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.16.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.693 \end{align}
+                 
+
+LaTeX Warning: Reference `eq:F-inv' on page 35 undefined on input line 694.
+
+
+LaTeX Warning: Reference `eq:F-corner' on page 35 undefined on input line 700.
 
 [35]
 
-LaTeX Warning: File `figs/fig-controller-loop.png' not found on input line 591.
+LaTeX Warning: Reference `fig:c-bpf' on page 36 undefined on input line 714.
+
+
+LaTeX Warning: File `figs/Bandpass_cutoff.png' not found on input line 720.
+
+
+! Package pdftex.def Error: File `figs/Bandpass_cutoff.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.720 ...0.75\linewidth]{figs/Bandpass_cutoff.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:p17' on page 36 undefined on input line 725.
+
+[36]
+
+LaTeX Warning: File `figs/fig-controller-loop.png' not found on input line 743.
 
 
 
@@ -2452,44 +2470,41 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.591 ...\linewidth]{figs/fig-controller-loop.png}
+l.743 ...\linewidth]{figs/fig-controller-loop.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+LaTeX Warning: Reference `eq:F-char' on page 37 undefined on input line 748.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.17.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.605 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.605 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.605 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.611 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.611 \end{align}
+l.753 \end{align}
                  
 
-LaTeX Warning: File `figs/Controller_stability.png' not found on input line 615
+LaTeX Warning: Reference `eq:F-cubic-roots' on page 37 undefined on input line 
+754.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 757.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 757.
+
+[37]
+
+LaTeX Warning: Reference `eq:F-hurwitz2' on page 38 undefined on input line 764
+.
+
+
+LaTeX Warning: Reference `fig:c-ctrl' on page 38 undefined on input line 765.
+
+
+LaTeX Warning: File `figs/Controller_stability.png' not found on input line 771
 .
 
 
@@ -2500,139 +2515,96 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.615 ...linewidth]{figs/Controller_stability.png}
+l.771 ...linewidth]{figs/Controller_stability.png}
                                                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[36]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.621 \item\label
-                 {p:routh}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.638 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.638 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.638 \end{align}
-                  [37]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.642 \end{align}
-                 
-
-LaTeX Warning: File `figs/Routh_roots.png' not found on input line 646.
-
-
-! Package pdftex.def Error: File `figs/Routh_roots.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.646 ...dth=1.00\linewidth]{figs/Routh_roots.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.652 \item\label
-                 {p:sampling}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [38]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.656 \end{align}
+l.795 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.660 \end{align}
+l.795 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.3
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.673 \end{align}
+l.795 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.4
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.679 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.679 \end{align}
+l.795 \end{align}
                  
 
-LaTeX Warning: File `figs/Sampling_offset.png' not found on input line 683.
+LaTeX Warning: Command \j invalid in math mode on input line 796.
 
 
-! Package pdftex.def Error: File `figs/Sampling_offset.png' not found: using dr
-aft setting.
+LaTeX Warning: Reference `fig:c-routh' on page 39 undefined on input line 800.
+
+
+LaTeX Warning: File `figs/Routh_hurwitz.png' not found on input line 806.
+
+
+! Package pdftex.def Error: File `figs/Routh_hurwitz.png' not found: using draf
+t setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.683 ...1.00\linewidth]{figs/Sampling_offset.png}
+l.806 ...h=0.75\linewidth]{figs/Routh_hurwitz.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [39]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.814 \end{align}
+                 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.689 \item\label
-                 {p:meters}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-sampled' on page 40 undefined on input line 830.
 
 
-LaTeX Warning: File `figs/fig-ac-meters.png' not found on input line 699.
+
+LaTeX Warning: Command \j invalid in math mode on input line 833.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 833.
+
+
+LaTeX Warning: Reference `eq:F-nyquist' on page 40 undefined on input line 834.
+
+
+
+LaTeX Warning: Reference `eq:F-lpf' on page 40 undefined on input line 840.
+
+
+LaTeX Warning: Reference `fig:c-samp' on page 40 undefined on input line 847.
+
+<figs/Impulse_sampling.png, id=630, 507.496pt x 310.3595pt>
+File: figs/Impulse_sampling.png Graphic file (type png)
+<use figs/Impulse_sampling.png>
+Package pdftex.def Info: figs/Impulse_sampling.png  used on input line 853.
+(pdftex.def)             Requested size: 273.14647pt x 167.04701pt.
+[40]
+
+LaTeX Warning: Reference `fig:p20' on page 41 undefined on input line 858.
+
+
+LaTeX Warning: File `figs/fig-ac-meters.png' not found on input line 870.
 
 
 ! Package pdftex.def Error: File `figs/fig-ac-meters.png' not found: using draf
@@ -2642,51 +2614,72 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.699 ...h=0.60\linewidth]{figs/fig-ac-meters.png}
+l.870 ...h=0.60\linewidth]{figs/fig-ac-meters.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[40]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.711 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.711 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.715 \end{align}
-                 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+LaTeX Warning: Reference `fig:p20' on page 41 undefined on input line 875.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.20.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.882 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.20.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.882 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.20.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.882 \end{align}
+                  [41 <./figs/Impulse_sampling.png>]
+
+LaTeX Warning: Reference `eq:F-series-rlc' on page 42 undefined on input line 8
+83.
+
+
+LaTeX Warning: Reference `eq:F-resonance' on page 42 undefined on input line 88
+9.
+
+
+LaTeX Warning: Reference `fig:c-rlc' on page 42 undefined on input line 897.
+
+
+LaTeX Warning: File `figs/RLC_capacitor.png' not found on input line 903.
+
+
+! Package pdftex.def Error: File `figs/RLC_capacitor.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.718 \item\label
-                 {p:zparam}
+l.903 ...h=0.75\linewidth]{figs/RLC_capacitor.png}
+                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
+[42]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.722 \end{align}
+l.911 \end{align}
                  
 
-LaTeX Warning: File `figs/fig-two-port.png' not found on input line 732.
+LaTeX Warning: Reference `fig:p21' on page 43 undefined on input line 912.
+
+
+LaTeX Warning: File `figs/fig-two-port.png' not found on input line 924.
 
 
 ! Package pdftex.def Error: File `figs/fig-two-port.png' not found: using draft
@@ -2696,207 +2689,173 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.732 ...th=0.80\linewidth]{figs/fig-two-port.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[41]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.744 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.744 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.750 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.750 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.754 \end{align}
-                 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.757 \item\label
-                 {p:ml}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[42]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.776 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.776 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.776 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.776 \end{align}
-                 
-
-LaTeX Warning: File `figs/ML_detection.png' not found on input line 780.
-
-
-! Package pdftex.def Error: File `figs/ML_detection.png' not found: using draft
- setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.780 ...th=1.00\linewidth]{figs/ML_detection.png}
+l.924 ...th=0.75\linewidth]{figs/fig-two-port.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [43]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.786 \item\label
-                 {p:randproc}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-rnet' on page 44 undefined on input line 929.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.790 \end{align}
-                  [44]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.808 \end{align}
+l.936 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.3
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.814 \end{align}
+l.936 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.4
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.814 \end{align}
+l.936 \end{align}
                  
 
-LaTeX Warning: File `figs/Random_process.png' not found on input line 818.
+LaTeX Warning: Reference `eq:F-zparam' on page 44 undefined on input line 937.
 
 
-! Package pdftex.def Error: File `figs/Random_process.png' not found: using dra
-ft setting.
+LaTeX Warning: Reference `eq:F-zdef' on page 44 undefined on input line 949.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.818 ...=1.00\linewidth]{figs/Random_process.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[44]
 
-[45]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.824 \item\label
-                 {p:adc}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-ml' on page 45 undefined on input line 965.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+LaTeX Warning: Reference `eq:F-gauss-sym' on page 45 undefined on input line 96
+5.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.22.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.839 \end{align}
+l.976 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.22.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.839 \end{align}
+l.976 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.22.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.976 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.22.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.976 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.22.5
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.976 \end{align}
                  
 
-LaTeX Warning: File `figs/ADC_snr.png' not found on input line 842.
+LaTeX Warning: Reference `fig:c-ml' on page 45 undefined on input line 978.
+
+<figs/Gaussian_tail.png, id=692, 505.4885pt x 310.3595pt>
+File: figs/Gaussian_tail.png Graphic file (type png)
+<use figs/Gaussian_tail.png>
+Package pdftex.def Info: figs/Gaussian_tail.png  used on input line 984.
+(pdftex.def)             Requested size: 273.14647pt x 167.71pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.23.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.992 \end{align}
+                  [45 <./figs/Gaussian_tail.png>]
+
+LaTeX Warning: Reference `eq:F-expect' on page 46 undefined on input line 1010.
 
 
-! Package pdftex.def Error: File `figs/ADC_snr.png' not found: using draft sett
-ing.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.842 ...s[width=1.00\linewidth]{figs/ADC_snr.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.23.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1015 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.23.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1015 \end{align}
+                  
 
+LaTeX Warning: Reference `eq:F-uncorr' on page 46 undefined on input line 1016.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.23.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1019 \end{align}
+                  
+
+LaTeX Warning: Reference `fig:c-rp' on page 46 undefined on input line 1027.
+
+<figs/Random_process.png, id=707, 507.496pt x 282.2545pt>
+File: figs/Random_process.png Graphic file (type png)
+<use figs/Random_process.png>
+Package pdftex.def Info: figs/Random_process.png  used on input line 1033.
+(pdftex.def)             Requested size: 273.14647pt x 151.91986pt.
 [46]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+LaTeX Warning: Reference `eq:F-adc' on page 47 undefined on input line 1049.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.24.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1060 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.24.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1060 \end{align}
+                  
+
+LaTeX Warning: Reference `fig:c-adc' on page 47 undefined on input line 1061.
+
+
+LaTeX Warning: File `figs/ADC_SNR_data_rate.png' not found on input line 1067.
+
+
+! Package pdftex.def Error: File `figs/ADC_SNR_data_rate.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.848 \item\label
-                 {p:seq}
+l.1067 ...5\linewidth]{figs/ADC_SNR_data_rate.png}
+                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[47 <./figs/Random_process.png>]
 
-LaTeX Warning: File `figs/fig-sequential-circuit.png' not found on input line 8
-58.
+LaTeX Warning: Reference `fig:p25' on page 48 undefined on input line 1072.
+
+
+LaTeX Warning: File `figs/fig-sequential-circuit.png' not found on input line 1
+084.
 
 
 ! Package pdftex.def Error: File `figs/fig-sequential-circuit.png' not found: u
@@ -2906,61 +2865,37 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.858 ...newidth]{figs/fig-sequential-circuit.png}
+l.1084 ...ewidth]{figs/fig-sequential-circuit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[47]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+[48]
+
+LaTeX Warning: Reference `fig:p25' on page 49 undefined on input line 1089.
+
+
+LaTeX Warning: Reference `eq:F-dff' on page 49 undefined on input line 1089.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.25.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.872 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+l.1098 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.25.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.872 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.872 \end{align}
-                  [48]
+l.1098 \end{align}
+                  
 
-LaTeX Warning: File `figs/Sequential_circuit.png' not found on input line 889.
-
-
-! Package pdftex.def Error: File `figs/Sequential_circuit.png' not found: using
- draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.889 ...0\linewidth]{figs/Sequential_circuit.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.895 \item\label
-                 {p:charge}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:p26' on page 49 undefined on input line 1118.
 
 [49]
 
-LaTeX Warning: File `figs/fig-square-sheet.png' not found on input line 905.
+LaTeX Warning: File `figs/fig-square-sheet.png' not found on input line 1130.
 
 
 ! Package pdftex.def Error: File `figs/fig-square-sheet.png' not found: using d
@@ -2970,122 +2905,61 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.905 ....45\linewidth]{figs/fig-square-sheet.png}
+l.1130 ...45\linewidth]{figs/fig-square-sheet.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+LaTeX Warning: Reference `fig:p26' on page 50 undefined on input line 1135.
+
+
+LaTeX Warning: Reference `eq:F-charge' on page 50 undefined on input line 1135.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.26.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.919 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.919 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.919 \end{align}
-                 
+l.1144 \end{align}
+                  
 
-LaTeX Warning: File `figs/Sheet_charge.png' not found on input line 922.
+LaTeX Warning: Reference `fig:c-sheet' on page 50 undefined on input line 1145.
 
 
-! Package pdftex.def Error: File `figs/Sheet_charge.png' not found: using draft
- setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.922 ...th=1.00\linewidth]{figs/Sheet_charge.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<figs/Surface_charge_density.png, id=758, 399.091pt x 328.8285pt>
+File: figs/Surface_charge_density.png Graphic file (type png)
+<use figs/Surface_charge_density.png>
+Package pdftex.def Info: figs/Surface_charge_density.png  used on input line 11
+51.
+(pdftex.def)             Requested size: 273.14647pt x 225.07056pt.
 [50]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.928 \item\label
-                 {p:wire}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-J' on page 51 undefined on input line 1167.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.27.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.945 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+l.1182 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.28.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.945 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.945 \end{align}
-                 
+l.1187 \end{align}
+                   [51 <./figs/Surface_charge_density.png>]
 
-LaTeX Warning: File `figs/Copper_wire.png' not found on input line 948.
+LaTeX Warning: Reference `eq:F-intbound' on page 52 undefined on input line 119
+9.
 
 
-! Package pdftex.def Error: File `figs/Copper_wire.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.948 ...dth=1.00\linewidth]{figs/Copper_wire.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[51]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.954 \item\label
-                 {p:intbound}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:c-ib' on page 52 undefined on input line 1209.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.958 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.971 \end{align}
-                  [52]
-
-LaTeX Warning: File `figs/Integral_bounds.png' not found on input line 975.
+LaTeX Warning: File `figs/Integral_bounds.png' not found on input line 1215.
 
 
 ! Package pdftex.def Error: File `figs/Integral_bounds.png' not found: using dr
@@ -3095,50 +2969,51 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.975 ...1.00\linewidth]{figs/Integral_bounds.png}
+l.1215 ....75\linewidth]{figs/Integral_bounds.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[52]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+LaTeX Warning: Reference `eq:F-cauchy' on page 53 undefined on input line 1231.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.981 \item\label
-                 {p:contour}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-[53]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.29.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.996 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.996 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1000 \end{align}
+l.1236 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.29.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1004 \end{align}
+l.1236 \end{align}
                   
 
-LaTeX Warning: File `figs/Contour_integrals.png' not found on input line 1008.
+LaTeX Warning: Reference `eq:F-zn' on page 53 undefined on input line 1237.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.29.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1240 \end{align}
+                  
+
+LaTeX Warning: Reference `eq:F-sec' on page 53 undefined on input line 1241.
+
+
+LaTeX Warning: Reference `eq:F-cauchy' on page 53 undefined on input line 1241.
+
+
+
+LaTeX Warning: Reference `fig:c-cont' on page 53 undefined on input line 1246.
+
+
+LaTeX Warning: File `figs/Contour_integrals.png' not found on input line 1252.
 
 
 ! Package pdftex.def Error: File `figs/Contour_integrals.png' not found: using 
@@ -3148,200 +3023,159 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1008 ...0\linewidth]{figs/Contour_integrals.png}
+l.1252 ...5\linewidth]{figs/Contour_integrals.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+[53]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.30.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1260 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.30.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1277 \end{align}
+                  
+
+LaTeX Warning: Reference `eq:F-state-unbounded' on page 54 undefined on input l
+ine 1278.
+
+
+LaTeX Warning: Reference `eq:F-state-integrator' on page 54 undefined on input 
+line 1278.
+
+
+LaTeX Warning: Reference `eq:F-state-bounded' on page 54 undefined on input lin
+e 1278.
 
 [54]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1014 \item\label
-                  {p:state}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:c-state' on page 55 undefined on input line 1287.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1018 \end{align}
-                   [55]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1035 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1035 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1035 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1043 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1043 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1043 \end{align}
-                  
 
-LaTeX Warning: File `figs/State_bounded.png' not found on input line 1047.
+LaTeX Warning: File `figs/State_boundedness.png' not found on input line 1293.
 
 
-! Package pdftex.def Error: File `figs/State_bounded.png' not found: using draf
-t setting.
+! Package pdftex.def Error: File `figs/State_boundedness.png' not found: using 
+draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1047 ...=1.00\linewidth]{figs/State_bounded.png}
+l.1293 ...5\linewidth]{figs/State_boundedness.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[56]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+Underfull \hbox (badness 2351) in paragraph at lines 1298--1301
+[]\OT1/ptm/m/n/10 The ran-dom vari-able $\OML/cmm/m/it/10 X$ \OT1/ptm/m/n/10 ta
+kes val-ues in $[]$ with $[] [] \OT1/cmr/m/n/10 =
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1053 \item\label
-                  {p:entropy}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[55]
+
+LaTeX Warning: Reference `eq:F-entropy' on page 56 undefined on input line 1309
+.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.31.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1067 \end{align}
+l.1314 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.31.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1067 \end{align}
-                   [57]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1075 \end{align}
+l.1314 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.31.3
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1075 \end{align}
+l.1322 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.31.4
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1075 \end{align}
+l.1322 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.31.5
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1322 \end{align}
                   
 
-LaTeX Warning: File `figs/Entropy_ternary.png' not found on input line 1079.
+LaTeX Warning: Reference `fig:c-ent' on page 56 undefined on input line 1324.
+
+<figs/Entropy.png, id=843, 499.0645pt x 310.3595pt>
+File: figs/Entropy.png Graphic file (type png)
+<use figs/Entropy.png>
+Package pdftex.def Info: figs/Entropy.png  used on input line 1330.
+(pdftex.def)             Requested size: 273.14647pt x 169.86475pt.
+
+LaTeX Warning: Command \j invalid in math mode on input line 1340.
 
 
-! Package pdftex.def Error: File `figs/Entropy_ternary.png' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1079 ....00\linewidth]{figs/Entropy_ternary.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Command \j invalid in math mode on input line 1340.
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1085 \item\label
-                  {p:fsscale}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Command \j invalid in math mode on input line 1340.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.32.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1090 \end{align}
-                   [58]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1103 \end{align}
+l.1340 \end{align}
                   
 
-LaTeX Warning: File `figs/Fourier_scaling.png' not found on input line 1107.
+LaTeX Warning: Command \j invalid in math mode on input line 1340.
+
+[56 <./figs/Entropy.png>]
+
+LaTeX Warning: Reference `eq:F-fs-period' on page 57 undefined on input line 13
+52.
 
 
-! Package pdftex.def Error: File `figs/Fourier_scaling.png' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1107 ....00\linewidth]{figs/Fourier_scaling.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[59]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1113 \item\label
-                  {p:sfg}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-fs-scale' on page 57 undefined on input line 135
+8.
 
 
-LaTeX Warning: File `figs/fig-sfg-blockdiagram.png' not found on input line 112
-3.
+LaTeX Warning: Command \j invalid in math mode on input line 1363.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 1363.
+
+
+LaTeX Warning: Reference `fig:c-fs' on page 57 undefined on input line 1365.
+
+<figs/Fourier_time_scaling.png, id=858, 507.496pt x 310.3595pt>
+File: figs/Fourier_time_scaling.png Graphic file (type png)
+<use figs/Fourier_time_scaling.png>
+Package pdftex.def Info: figs/Fourier_time_scaling.png  used on input line 1371
+.
+(pdftex.def)             Requested size: 273.14647pt x 167.04701pt.
+
+LaTeX Warning: Reference `fig:p56a' on page 57 undefined on input line 1376.
+
+
+LaTeX Warning: Reference `fig:p56b' on page 57 undefined on input line 1376.
+
+
+LaTeX Warning: File `figs/fig-sfg-blockdiagram.png' not found on input line 138
+8.
 
 
 ! Package pdftex.def Error: File `figs/fig-sfg-blockdiagram.png' not found: usi
@@ -3351,14 +3185,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1123 ...inewidth]{figs/fig-sfg-blockdiagram.png}
+l.1388 ...inewidth]{figs/fig-sfg-blockdiagram.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[60]
 
-LaTeX Warning: File `figs/fig-sfg-options.png' not found on input line 1130.
+LaTeX Warning: File `figs/fig-sfg-options.png' not found on input line 1394.
 
 
 ! Package pdftex.def Error: File `figs/fig-sfg-options.png' not found: using dr
@@ -3368,104 +3201,117 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1130 ....80\linewidth]{figs/fig-sfg-options.png}
+l.1394 ....80\linewidth]{figs/fig-sfg-options.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[61]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
+[57 <./figs/Fourier_time_scaling.png>] [58]
+
+LaTeX Warning: Reference `fig:p56a' on page 59 undefined on input line 1399.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.33.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1142 \end{align}
+l.1408 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.33.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1142 \end{align}
-                   [62]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1159 \item\label
-                  {p:dice}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1168 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1168 \end{align}
+l.1408 \end{align}
                   
 
-LaTeX Warning: File `figs/Dice_sum.png' not found on input line 1171.
+LaTeX Warning: Reference `eq:F-mason' on page 59 undefined on input line 1409.
 
 
-! Package pdftex.def Error: File `figs/Dice_sum.png' not found: using draft set
-ting.
+LaTeX Warning: Reference `fig:c-sfg' on page 59 undefined on input line 1423.
+
+[59]
+
+LaTeX Warning: File `figs/Mason_signal_flow_graph.png' not found on input line 
+1429.
+
+
+! Package pdftex.def Error: File `figs/Mason_signal_flow_graph.png' not found: 
+using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1171 ...width=1.00\linewidth]{figs/Dice_sum.png}
+l.1429 ...width]{figs/Mason_signal_flow_graph.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1177 \item\label
-                  {p:ls}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `eq:F-expect' on page 60 undefined on input line 1438.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
-) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.34.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1181 \end{align}
-                   [63]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1191 \end{align}
+l.1447 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.7}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.34.2
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1191 \end{align}
+l.1447 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.8}
-) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.34.3
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1191 \end{align}
+l.1447 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.34.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1447 \end{align}
                   
 
-LaTeX Warning: File `figs/Least_squares.png' not found on input line 1194.
+LaTeX Warning: Reference `fig:c-dice' on page 60 undefined on input line 1448.
+
+<figs/Two_dice_PMF.png, id=892, 505.4885pt x 310.3595pt>
+File: figs/Two_dice_PMF.png Graphic file (type png)
+<use figs/Two_dice_PMF.png>
+Package pdftex.def Info: figs/Two_dice_PMF.png  used on input line 1454.
+(pdftex.def)             Requested size: 273.14647pt x 167.71pt.
+[60]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.35.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1462 \end{align}
+                  
+
+LaTeX Warning: Reference `eq:F-ls' on page 61 undefined on input line 1467.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.35.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1478 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.35.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1478 \end{align}
+                  
+
+LaTeX Warning: Reference `fig:c-ls' on page 61 undefined on input line 1479.
+
+
+LaTeX Warning: File `figs/Least_squares.png' not found on input line 1485.
 
 
 ! Package pdftex.def Error: File `figs/Least_squares.png' not found: using draf
@@ -3475,104 +3321,50 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1194 ...=1.00\linewidth]{figs/Least_squares.png}
+l.1485 ...=0.75\linewidth]{figs/Least_squares.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[64]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1200 \item\label
-                  {p:mi}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.9}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1204 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.10
+[61 <./figs/Two_dice_PMF.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.36.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1217 \end{align}
+l.1493 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.11
+
+LaTeX Warning: Reference `eq:F-marginal' on page 62 undefined on input line 149
+8.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.36.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1217 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.12
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1217 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.13
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1217 \end{align}
-                   [65]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.14
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1225 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.15
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1225 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.16
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1225 \end{align}
+l.1507 \end{align}
                   
 
-LaTeX Warning: File `figs/Mutual_information.png' not found on input line 1228.
+LaTeX Warning: Reference `eq:F-indep' on page 62 undefined on input line 1518.
 
 
+LaTeX Warning: Reference `eq:F-mi-zero' on page 62 undefined on input line 1518
+.
 
-! Package pdftex.def Error: File `figs/Mutual_information.png' not found: using
- draft setting.
+[62]
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1228 ...\linewidth]{figs/Mutual_information.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:c-mi' on page 63 undefined on input line 1522.
 
+<figs/Joint_PMF.png, id=929, 357.7365pt x 310.3595pt>
+File: figs/Joint_PMF.png Graphic file (type png)
+<use figs/Joint_PMF.png>
+Package pdftex.def Info: figs/Joint_PMF.png  used on input line 1528.
+(pdftex.def)             Requested size: 273.14647pt x 236.97906pt.
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1234 \item\label
-                  {p:diode}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:p61' on page 63 undefined on input line 1533.
 
 
-LaTeX Warning: File `figs/fig-diode-circuit.png' not found on input line 1238.
+LaTeX Warning: File `figs/fig-diode-circuit.png' not found on input line 1537.
 
 
 ! Package pdftex.def Error: File `figs/fig-diode-circuit.png' not found: using 
@@ -3582,61 +3374,37 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1238 ...0\linewidth]{figs/fig-diode-circuit.png}
+l.1537 ...0\linewidth]{figs/fig-diode-circuit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[66]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.17
+[63 <./figs/Joint_PMF.png>]
+
+LaTeX Warning: Reference `fig:p61' on page 64 undefined on input line 1542.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.37.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1252 \end{align}
+l.1551 \end{align}
                   
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.18
+pdfTeX warning (ext4): destination with the same identifier (name{equation.37.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1252 \end{align}
-                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.19
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1252 \end{align}
+l.1551 \end{align}
                   
 
-LaTeX Warning: File `figs/Diode_conduction.png' not found on input line 1255.
+LaTeX Warning: Reference `eq:F-angletime' on page 64 undefined on input line 15
+52.
 
 
-! Package pdftex.def Error: File `figs/Diode_conduction.png' not found: using d
-raft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1255 ...00\linewidth]{figs/Diode_conduction.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[67]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1261 \item\label
-                  {p:clock}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:p62' on page 64 undefined on input line 1561.
 
 
-LaTeX Warning: File `figs/fig-clock-circuit.png' not found on input line 1265.
+LaTeX Warning: File `figs/fig-clock-circuit.png' not found on input line 1565.
 
 
 ! Package pdftex.def Error: File `figs/fig-clock-circuit.png' not found: using 
@@ -3646,26 +3414,30 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1265 ...5\linewidth]{figs/fig-clock-circuit.png}
+l.1565 ...5\linewidth]{figs/fig-clock-circuit.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[68]
+[64]
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1280 \item\label
-                  {p:faraday}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:p62' on page 65 undefined on input line 1570.
 
 
-LaTeX Warning: File `figs/fig-faraday-loop.png' not found on input line 1284.
+LaTeX Warning: Reference `eq:F-setup' on page 65 undefined on input line 1570.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.38.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1581 \end{align}
+                  
+
+LaTeX Warning: Reference `fig:p65' on page 65 undefined on input line 1587.
+
+
+LaTeX Warning: File `figs/fig-faraday-loop.png' not found on input line 1591.
 
 
 ! Package pdftex.def Error: File `figs/fig-faraday-loop.png' not found: using d
@@ -3675,153 +3447,101 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1284 ...60\linewidth]{figs/fig-faraday-loop.png}
+l.1591 ...60\linewidth]{figs/fig-faraday-loop.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[69]
+[65]
 
-LaTeX Warning: File `figs/Faraday_loop.png' not found on input line 1299.
+LaTeX Warning: Reference `fig:p65' on page 66 undefined on input line 1596.
 
 
-! Package pdftex.def Error: File `figs/Faraday_loop.png' not found: using draft
- setting.
+LaTeX Warning: Reference `eq:F-faraday' on page 66 undefined on input line 1596
+.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.39.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1609 \end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.39.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1609 \end{align}
+                  
+
+LaTeX Warning: Reference `fig:c-far' on page 66 undefined on input line 1610.
+
+
+LaTeX Warning: File `figs/Faraday_loop_current.png' not found on input line 161
+6.
+
+
+! Package pdftex.def Error: File `figs/Faraday_loop_current.png' not found: usi
+ng draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1299 ...h=1.00\linewidth]{figs/Faraday_loop.png}
+l.1616 ...inewidth]{figs/Faraday_loop_current.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[70]
-
-! LaTeX Error: \begin{align} on input line 117 ended by \end{itemlist}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1304 \end{itemlist}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [71] (./main.aux
-! Extra }, or forgotten \endgroup.
-l.63 \newlabel{eq:F-mi}1.1.42}
-                              .1}{10}{Formulae}{equation.42.1}{}}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.63 \newlabel{eq:F-mi}1.1.42}.1}
-                                 {10}{Formulae}{equation.42.1}{}}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.63 ...1.1.42}.1}{10}{Formulae}{equation.42.1}{}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.210 ...doesn't work, type  X <return>  to quit.}
-                                                  }{66}{Problems}{Item.214}{}}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.210 ...oesn't work, type  X <return>  to quit.}}
-                                                  {66}{Problems}{Item.214}{}}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.210 ...n>  to quit.}}{66}{Problems}{Item.214}{}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-)
+[66]) [67] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A59528675955E365DC1A8FC1F3895EBC;303.
 
-Overfull \hbox (128.44756pt too wide) in paragraph at lines 63--342
-[]\OT1/ptm/m/n/10 .1.42.110Formulaeequation.42.1                               
-                                                                               
-                                     <re-
- []
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--342
-\OT1/ptm/m/n/10 turn> to pro-ceed.If that doesn't work, type X <re-turn> to
- []
-
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 1 (\begingroup)
-### bottom level 
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 89E8D4DD41AD37C544EF79C4131F129A;206
+(rerunfilecheck)             After:  A59528675955E365DC1A8FC1F3895EBC;303.
+ ) 
 Here is how much of TeX's memory you used:
- 56023 strings out of 467533
- 1353894 string characters out of 5422138
- 1952662 words of memory out of 5000000
- 83709 multiletter control sequences out of 15000+600000
- 664129 words of font info for 113 fonts, out of 8000000 for 9000
+ 56181 strings out of 467533
+ 1351644 string characters out of 5422138
+ 1943299 words of memory out of 5000000
+ 83640 multiletter control sequences out of 15000+600000
+ 662536 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,18n,118p,1194b,1310s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (71 pages, 322363 bytes).
+ 109i,18n,118p,1194b,1511s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on main.pdf (67 pages, 1484527 bytes).
 PDF statistics:
- 1400 PDF objects out of 1440 (max. 8388607)
- 890 compressed objects within 9 object streams
- 448 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1197 PDF objects out of 1200 (max. 8388607)
+ 1042 compressed objects within 11 object streams
+ 681 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
