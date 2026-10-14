@@ -24,6 +24,17 @@
     urlcolor=black % Changes text color instead of placing a box around it
 }
 \usepackage{amsfonts}
+
+% ---- extra packages / macros used by the EC 2025 chapters ----
+\usepackage{multicol,booktabs}
+\providecommand{\jj}{\mathrm{j}}
+\providecommand{\dd}{\,\mathrm{d}}
+% "from (equation no.)" written beside the step that uses a formula
+\providecommand{\uses}[1]{\qquad\text{\small[from \eqref{#1}]}}
+% answer options in two columns, and statement sub-conditions
+\newenvironment{options}{\begin{enumerate}[label=(\Alph*),itemsep=0pt,topsep=0pt]\begin{multicols}{2}}{\end{multicols}\end{enumerate}}
+\newenvironment{conds}{\begin{enumerate}[label=(\roman*),itemsep=0pt,topsep=0pt]}{\end{enumerate}}
+
 \makeindex
 
 \begin{document}
@@ -101,6 +112,7 @@ In this edition, some incorrect solutions were removed.  All figures redrawn. Mo
 \input{chapters/ec_2025_formulae.tex}
 \subsection{Problems}
 \input{chapters/ec_2025.tex}
+
 \iffalse
 \subsection{Formulae}
 \input{chapters/formulae/vectors/two.tex}
@@ -328,5 +340,4 @@ Consider a triangle with vertices
 \input{chapters/formulae/conics/app}
 \fi
 \end{document}
-
 
