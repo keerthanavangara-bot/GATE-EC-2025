@@ -1,18 +1,20 @@
+\begin{enumerate}[label=\thesubsection.\arabic*, ref=\thesubsection.\theenumi]
+\begin{enumerate}
 \begin{itemlist}
-\item\label{p:rank}
-Consider the matrix $\vec A$ below:
+
+\item Consider the matrix $\vec A$ below:
 \begin{align}
 \vec A=\myvec{2&3&4&5\\0&6&7&8\\0&0&\alpha&\beta\\0&0&0&\gamma}
-\label{eq:P1-A}
+from \eqref{eq:F-rank-pivots}
 \end{align}
 For which of the following combinations of $\alpha$, $\beta$ and $\gamma$ is the rank of $\vec A$ at least three?
 \hfill (EC~2025)
-\begin{conds}
-\item $\alpha=0$ and $\beta=\gamma\ne0$.
-\item $\alpha=\beta=\gamma=0$.
-\item $\beta=\gamma=0$ and $\alpha\ne0$.
-\item $\alpha=\beta=\gamma\ne0$.
-\end{conds}
+\begin{enumerate}
+    \item[$(i)$] $\alpha=0$ and $\beta=\gamma\neq0$.
+    \item[$(ii)$] $\alpha=\beta=\gamma=0$.
+    \item[$(iii)$] $\alpha=\gamma=0$ and $\alpha\neq0$.
+    \item[$(iv)$] $\alpha=\beta=\gamma\neq0$.
+\end{enumerate}
 \begin{options}
 \item Only (i), (iii), and (iv)
 \item Only (iv)
@@ -49,8 +51,7 @@ Case (iv), $\alpha=\beta=\gamma\ne0$: the matrix is already in echelon form with
 \end{align}
 
 
-\item\label{p:series}
-Consider the following series:
+\item Consider the following series:
 \begin{align}
 \text{(i)}\ \sum_{n=1}^{\infty}\frac{1}{\sqrt n},\qquad
 \text{(ii)}\ \sum_{n=1}^{\infty}\frac{1}{n(n+1)},\qquad

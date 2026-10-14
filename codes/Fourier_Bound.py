@@ -1,0 +1,15 @@
+import numpy as np
+from plot_utils import plt, savefig
+t=np.linspace(-10,10,20001)
+f=np.exp(-np.abs(t))
+w=np.linspace(-8,8,1601)
+F=np.array([np.trapz(f*np.exp(-1j*ww*t),t) for ww in w])
+bound=np.trapz(np.abs(f),t)
+print(f"Numerical integral |f(t)| dt ≈ {bound:.6f}; max |F(w)| ≈ {np.max(np.abs(F)):.6f}")
+print("Triangle inequality guarantees |F(w)| <= integral |f(t)| dt.")
+fig,ax=plt.subplots(figsize=(8,4.5))
+ax.plot(w,np.abs(F),label=r"$|F(\omega)|$")
+ax.axhline(bound,ls="--",label=r"$\int |f(t)|dt$")
+ax.set(xlabel=r"$\omega$ (rad/s)",ylabel="Magnitude",title="Q18 — Fourier-transform magnitude bound")
+ax.grid(True,alpha=.3); ax.legend()
+savefig(fig,"Q18_Fourier_bound.png")

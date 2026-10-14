@@ -1,0 +1,5 @@
+print("Q27 facts:")
+print("(A) False: a DTFT need not exist for every sequence.")
+print("(B) False: ROC contains no poles, but may contain zeros.")
+print("(C) True: DTFT exists when the z-transform ROC contains the unit circle.")
+print("(D) True for x[n]=alpha*delta[n], alpha != 0: X(z)=alpha and ROC is entire z-plane.")

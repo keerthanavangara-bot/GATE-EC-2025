@@ -1,3 +1,4 @@
+\begin{document}
 \begin{enumerate}[label=\thesubsection.\arabic*, ref=\thesubsection.\theenumi, itemsep=0pt, leftmargin=0pt, labelwidth=0pt, itemindent=0pt, labelsep=1em, align=right]
 
 \item Rank of a Matrix
@@ -27,7 +28,8 @@ e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!}
 \sum_{n=1}^{\infty} \frac{1}{n!} &= e - 1
 \label{eq:F-exp}
 \end{align}
-\solution Substituting $x = 1$ and removing the term $n = 0$ gives \eqref{eq:F-exp}.
+\solution
+Substituting $x = 1$ and removing the term $n = 0$ gives \eqref{eq:F-exp}.
 
 \item Ratio Test For a series $\sum a_n$,
 \begin{align}
@@ -219,6 +221,7 @@ Y\brak{\omega} &= \frac{1}{T_s} \sum_{k} e^{-\jj k \omega_s \tau} F\brak{\omega 
 \label{eq:F-sampled}
 \end{align}
 where $y\brak{t} = f\brak{t} \sum_{n} \delta\brak{t - \tau - n T_s}$.
+
 \solution Multiplying $f\brak{t}$ by \eqref{eq:F-comb-fs} and using that $f\brak{t}e^{\jj k \omega_s t}$ has transform $F\brak{\omega - k\omega_s}$,
 \begin{align}
 y\brak{t} &= \frac{1}{T_s} \sum_{k} e^{-\jj k \omega_s \tau} f\brak{t} e^{\jj k \omega_s t}
@@ -336,7 +339,7 @@ X + \overline{Y} + 1 &= X + \brak{2^n - 1} - Y + 1
 &\equiv X - Y \pmod{2^n}
 \end{align}
 
-\item (D Flip-Flop and Setup Constraint)
+\item D Flip-Flop and Setup Constraint
 \begin{align}
 Q^{+} &= D
 \label{eq:F-dff}
@@ -437,7 +440,8 @@ Q &= \iint \rho_s \dd A
 \label{eq:F-charge}
 \end{align}
 
-\item Ideal Diode and Phase-to-Time Conversion An ideal diode is forward biased iff the anode voltage exceeds the cathode voltage. A phase interval $\Delta \theta$ at angular frequency $\omega$ lasts
+\item Ideal Diode and Phase-to-Time Conversion.
+An ideal diode is forward biased iff the anode voltage exceeds the cathode voltage. A phase interval $\Delta \theta$ at angular frequency $\omega$ lasts
 \begin{align}
 \Delta t &= \frac{\Delta \theta}{\omega}
 \label{eq:F-angletime}
@@ -470,7 +474,8 @@ t^2 y'' + a t y' + b y &= t^m \sbrak{m\brak{m - 1} + a m + b}
 \end{align}
 yielding \eqref{eq:F-euler-cauchy}.
 
-\item Least Squares The scalar $x$ minimizing $\norm{x\vec{a} - \vec{b}}$ is
+\item Least Squares. 
+The scalar $x$ minimizing $\norm{x\vec{a} - \vec{b}}$ is
 \begin{align}
 x^* &= \frac{\vec{a}^\top \vec{b}}{\vec{a}^\top \vec{a}}
 \label{eq:F-ls}
