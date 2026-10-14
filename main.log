@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.9)  14 OCT 2026 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.9)  14 OCT 2026 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1598,6 +1598,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
                    \relax 
 l.77 \end{align}
                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 \end{align}
+                
 
 LaTeX Warning: File `figs/Series_convergence.png' not found on input line 80.
 
@@ -1614,19 +1626,7 @@ l.80 ...00\linewidth]{figs/Series_convergence.png}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[13
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.84 
-     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.84 
-     ]
+[13]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -3712,7 +3712,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  56055 strings out of 467533
  1354762 string characters out of 5422138
- 1952662 words of memory out of 5000000
+ 1953662 words of memory out of 5000000
  83739 multiletter control sequences out of 15000+600000
  664129 words of font info for 113 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -3733,7 +3733,7 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (72 pages, 323171 bytes).
+Output written on main.pdf (72 pages, 323274 bytes).
 PDF statistics:
  1405 PDF objects out of 1440 (max. 8388607)
  894 compressed objects within 9 object streams
